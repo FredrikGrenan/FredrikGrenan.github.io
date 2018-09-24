@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Motvind Eventbyrå AS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1><i>Bryllup</i></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Hovedside.html">Hovedside</a></li>
+        <li><a href="barnebursdag.html">Barnebursdag</a></li>
+        <li><a href="klassefest.html">Klassefest</a></li>
+        <li><a class="active" href="bryllup.html">Bryllup</a></li>
+      </ul>
+    </nav>
+    <main>
+      <img src="../filer/Bilder/bryllup.jpg" alt="">
+        <form class="" action="takk.html">
+
+        <p>Hva heter den påmeldte?</p>
+          <label>Navn:</label> <input type="text" name="Navn" required placeholder="Fyll inn her">
+
+        <p>Kommer personen alene eller med følge?</p>
+          <label>Alene</label> <input type="radio" name="følge" value="Alene">
+          <label>Med følge</label> <input type="radio" name="følge" value="Med følge">
+        <p>Hva vil den påmeldte å spise?</p>
+          <select class="Mat" name="Mat" required>
+            <option value="">Velg Mat</option>
+            <option value="Taco">Taco</option>
+            <option value="Fisk">Fisk</option>
+            <option value="Pizza">Pizza</option>
+          </select>
+      <br>
+          <input type="submit" name="" value="Send Inn">
+        </form>
+
+    </main>
+  </body>
+</html>
