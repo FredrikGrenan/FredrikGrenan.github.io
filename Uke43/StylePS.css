@@ -31,5 +31,24 @@ section{
 .navn{
   font-size: 20px;
 }
+.gruppe1{
+  background-color: red;
+}
 .gruppe2{
+  background-color: darkorange;
+}
+.gruppe3{
+  background-color: orange;
+}
+.gruppe4{
+  background-color: yellow;
+}
+.gruppe5{
+  background-color: lightgreen;
+}
+.gruppe6{
+  background-color: green;
+}
+.gruppe7{
+  background-color: purple;
 }
