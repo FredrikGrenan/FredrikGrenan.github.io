@@ -3,5 +3,39 @@ body{
 }
 main{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-auto-rows: minmax(50px,auto)
+}
+main>section{
+  background-color: orange;
+}
+header{
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr 1fr 1fr;
+  background-color: red;
+}
+header>.lenke{
+  align-self: center;
+  color: white;
+  text-decoration: none;
+}
+
+
+.litensak{
+  background-color:
+}
+.middelssak{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.storsak{
+  grid-column: span 3;
+  grid-row: span 3;
+}
+.usynlig{
+  opacity: 0%;
+}
+#Logo{
+
 }

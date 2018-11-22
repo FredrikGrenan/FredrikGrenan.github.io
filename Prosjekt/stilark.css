@@ -1,0 +1,66 @@
+header{
+  background-color: inherit;
+  color: white;
+}
+
+nav{
+  font-family: arial, sans-serif;
+  background-color: lightgrey;
+}
+main{
+  background-color: white
+  color: darkblue;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-gap: 2em;
+  margin-top: 5px;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li{
+  float: left;
+}
+img{
+  width: 100%
+}
+li a{
+  display: block;
+  color: inherit;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #012d5a;
+  color: white;
+}
+div{
+  display: block;
+}
+.active {
+  background-color: #012d5a;
+  color: white;
+}
+.header{
+  width: 100%
+}
+.spiller{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-size: 20px;
+  background-color: lightgrey;
+  transition: 0.3s;
+}
+.spiller:hover{
+  background-color: #012d5a;
+}
+.bildespiller{
+  padding: 10px;
+}
+.infospiller{
+  padding-left: 10px;
+}
