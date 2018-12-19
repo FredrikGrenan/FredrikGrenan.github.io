@@ -10,11 +10,11 @@ nav{
 main{
   background-color: white
   color: darkblue;
-  grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-gap: 2em;
   margin-top: 5px;
 }
+
 ul{
   list-style-type: none;
   margin: 0;
@@ -37,9 +37,50 @@ li a{
 li a:hover:not(.active) {
   background-color: #012d5a;
   color: white;
+  transition: 0.5s;
 }
 div{
   display: block;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+table{
+  width: 100%;
+  border-collapse:
+}
+td, th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even){
+  background-color: #dddddd
+}
+h2{
+  text-align: center;
+}
+footer{
+  background-color: #012d5a;
+  color: #ff9900;
+  text-align: center;
+  padding: 30px;
+}
+div{
+  display: grid;
+}
+h6{
+  text-align: center;
+  font-size: 25px;
+}
+.overskrift{
+  font-size: 25px;
+  text-align: center;
+}
+
+a:hover{
+  color: white;
 }
 .active {
   background-color: #012d5a;
@@ -57,10 +98,98 @@ div{
 }
 .spiller:hover{
   background-color: #012d5a;
+  color: white;
 }
 .bildespiller{
   padding: 10px;
 }
 .infospiller{
   padding-left: 10px;
+}
+.Posisjon{
+  grid-column: span 3;
+  text-align: center;
+  font-size: 30px;
+}
+.span2{
+  grid-column: span 2;
+}
+.span3{
+  grid-column: span 3;
+}
+.span2-2{
+  grid-row: span 2;
+}
+.Hjem{
+  grid-template-columns: 1fr 1fr;
+}
+.Indexbilde{
+  padding: 10px;
+  color: white;
+}
+.Indexgrid{
+  background-color: lightgrey;
+  transition: 0.5s;
+  display: block;
+}
+.Indexgrid:hover{
+  background-color: #012d5a;
+  color: white;
+
+}
+.Indextekst{
+  padding: 15px;
+}
+.tekstomklubben{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-gap: 2em;
+}
+.Topscorere{}
+.Stadion{
+  font-size: 14px;
+  color: black;
+  background-color: inherit;
+  transition: 0.5s;
+  padding: 10px;
+}
+.Stadion:hover{
+  font-size: 16px;
+  background-color: lightgrey;
+}
+.legender{
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  padding: 10px;
+  transition: 1s;
+}
+.legender:hover{
+  font-size: 18px;
+  border: solid 2px #012d5a;
+}
+.stabb{
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.kamp{
+  grid-template-columns: repeat(3,1fr)
+}
+.kjop{
+  border: solid 2px #012d5a;
+  padding: 15px;
+}
+.kjop2{
+  text-align: center;
+  transition: 0.5s;
+  font-size: 17px;
+}
+.kjop2:hover{
+  font-size: 20px;
+  text-decoration: none;
+  background-color: grey;
+}
+.infobil{
+  text-align: center;
+  font-size: 18px;
 }
