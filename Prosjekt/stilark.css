@@ -193,3 +193,22 @@ a:hover{
   text-align: center;
   font-size: 18px;
 }
+.sponsor{
+  grid-template-columns: repeat(4,1fr)
+}
+.dnb{
+  border: solid 2px #012d5a;
+  width: 80%;
+}
+.andspons{
+  border: solid 2px #012d5a;
+  width: 80%
+}
+.sponsmain{
+  background-color: #3385ff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
