@@ -1,0 +1,15 @@
+/* Navigasjonsbar */
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media(max-width:500px){
+  nav{
+    flex-direction: column;
+  }
+}
+
+
+/* Navigasjonsbar slutt */

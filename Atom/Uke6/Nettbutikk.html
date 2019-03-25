@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nettbutikk</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button type="button" name="button">Alle varer</button>
+        <button type="button" name="button">Gensere</button>
+        <button type="button" name="button">Bukser</button>
+        <button type="button" name="button">Handlekurv</button>
+        <button type="button" name="button">Tøm Handlekurv</button>
+      </nav>
+    </header>
+    <main>
+
+
+      <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDOSj7I4QHAoNy_NIqmmeWyLuJzFy9iT9M",
+          authDomain: "nettbutikk-c5a7c.firebaseapp.com",
+          databaseURL: "https://nettbutikk-c5a7c.firebaseio.com",
+          projectId: "nettbutikk-c5a7c",
+          storageBucket: "nettbutikk-c5a7c.appspot.com",
+          messagingSenderId: "357947270652"
+        };
+        firebase.initializeApp(config);
+      </script>
+      <script src="Nettbutikk.js" charset="utf-8"></script>
+
+    </main>
+    <footer></footer>
+  </body>
+</html>

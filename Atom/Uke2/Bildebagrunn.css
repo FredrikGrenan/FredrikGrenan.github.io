@@ -1,0 +1,8 @@
+body{
+  background-image: url(Bilder/ugandak.jpg);
+}
+@media(max-width:1000px){
+  body{
+    background-image: url(Bilder/bigc.jpg);
+  }
+}

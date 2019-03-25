@@ -1,0 +1,45 @@
+{
+  "1":{
+    "svar":"En primærnøkkel er en unik kode som gjør at vi raskt kan finne det vi leter etter i en database"
+  },
+  "2":{
+    "a":{
+      "svar":"Primærnøkkeler for elever på en skole kan være personnummer"
+    },
+    "b":{
+      "svar":"Primærnøkkeler for fritidsbåter kan være registreringsnummer"
+    },
+    "c":{
+    "svar":"Primærnøkkeler for planter kan være navnet på planten"
+    },
+    "d":{
+    "svar":"Primærnøkkeler for kontaktene dine kan være mobilnummer"
+    },
+    "e":{
+      "svar":"Primærnøkkeler for stjerner på himmelen kan være koordinatene deres"
+    }
+  },
+  "3":{
+    "svar":"En kandidatnøkkel er alle alternativene som kan brukes som primærnøkkel"
+  },
+  "4":{
+    "svar":"En fremmednøkkel er brukt når vi skal unngå dobbellagring. Den består av primærnøkklen og den nye informasjonen"
+  },
+  "5":{
+    "svar":"Normalisering er teknikker for å unngå dobbeltlagring i databaser"
+  },
+  "6":{
+    "spillere":{
+      "Thomasmat01":{
+        "seiere":"0",
+        "tap":"1000",
+        "score":"-107"
+      },
+      "Sjakkulis":{
+        "seiere":"3",
+        "tap "
+
+      }
+    }
+  }
+}
