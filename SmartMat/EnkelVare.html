@@ -2,68 +2,82 @@
 <html lang="nb" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Pokemon</title>
-    <link rel="stylesheet" href="pokemon.css">
+    <title></title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="Stilark.css">
 
-    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCFhmDveqpzRvevF6EyrLOh0NbACDQ3C_4",
-        authDomain: "pokemon-uke-8.firebaseapp.com",
-        databaseURL: "https://pokemon-uke-8.firebaseio.com",
-        projectId: "pokemon-uke-8",
-        storageBucket: "",
-        messagingSenderId: "974522538356"
-      };
-      firebase.initializeApp(config);
-    </script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDNi3PeJJwvN5uv4sCiyQa8zNZJcjrVu3Y",
+    authDomain: "smartmat-ff540.firebaseapp.com",
+    databaseURL: "https://smartmat-ff540.firebaseio.com",
+    projectId: "smartmat-ff540",
+    storageBucket: "",
+    messagingSenderId: "1015001865126"
+  };
+  firebase.initializeApp(config);
+</script>
 
   </head>
-
   <body>
     <header>
-      <nav>
-        <button onclick="visAlle()">Alle</button>
-        <button onclick="visGrass()">Grass</button>
-
-
-      </nav>
+      <img src="Bilder/logo.jpg" alt="">
     </header>
-    <main>
+    <nav>
+      <div id="mySidenav" class="sidenav" >
+        <ul>
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a> </li>
+          <li><a href="Index.html"><i class="fas fa-home"></i> Forside</a></li>
+          <li><a href="FinnVare.html"><i class="fas fa-carrot"></i> Varer</a></li>
+          <button class="dropdown-btn"><i class="fas fa-dice-six"></i> Matforslag <i class="fas fa-chevron-down"></i>
+            <i class="fa fa-caret.down" ></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="Matforslag.html">   <i class="fas fa-coffee"></i> Frokost</a>
+            <a href="Matforslag.html">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
+            <a href="Matforslag.html">   <i class="fas fa-utensils"></i> Middag</a>
+          </div>
+        </ul>
+      </div>
+        <div class="">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Meny</span>
+        </div>
+
+
+<script>
+
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+</script>
+
+    </nav>
+    <main class="">
 
     </main>
-
-    <script>
-        const main = document.querySelector("main"); // Variabel som referer til mian-elementet
-          // Referanser til databasen
-        const db = firebase.database();
-        const pokemon = db.ref("pokemon"); // Referer til alt som ligger under sko i databasen
-        function visPokemon(snapshot){
-              //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
-            let pokeSnap = snapshot.val();
-            let key = snapshot.key;
-            main.innerHTML +=`
-                <article class="Pokemon">
-                  <h1>${pokeSnap.Name}</h1>
-                  <img src="${pokeSnap.ImageURL}" alt="">
-                  <p>${pokeSnap.Type1} - ${pokeSnap.Type2}</p>
-                  <a href="pokestats.html?id=${key}">Vis </a>
-                </article>
-            `;
-        }
-        function visAlle(){
-          main.innerHTML = ``
-          pokemon.on("child_added",visPokemon);
-        }
-        visAlle();
-        function visGrass(){
-          main.innerHTML = ``
-          pokemon.orderByChild("Type1").equalTo("Grass").on("child_added",visPokemon);
-          pokemon.orderByChild("Type2").equalTo("Grass").on("child_added",visPokemon);
-        }
-    </script>
-
+    <footer></footer>
   </body>
 </html>

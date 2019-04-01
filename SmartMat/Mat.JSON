@@ -1,0 +1,234 @@
+{
+  "Mat":{
+    "Brød":{
+      "Kneip":{
+        "Vare":"Kneipbrød",
+        "Pris":15,
+        "Allergier":["Hvete","Nøtter","Sesamfrø"],
+        "Storrelse":"670 gram",
+        "Produsent":"KORN BAKERI",
+        "Bilde":"Bilder/Kneip.jpg"
+      },
+      "Loff":{
+        "Vare":"Loff",
+        "Pris":7,
+        "Allergier":["Hvete","Peanøtter","Nøtter"],
+        "Storrelse":"630 gram",
+        "Produsent":"KORN BAKERI",
+        "Bilde":"Bilder/Loff.jpg"
+      },
+      "Havrebrød":{
+        "Vare":"Havrebrød",
+        "Pris":39,
+        "Allergier":["Hvete","Nøtter"],
+        "Storrelse":"700 gram",
+        "Produsent":"KORN BAKERI",
+        "Bilde":"Bilder/Havrebrød.jpg"
+      },
+      "Familiebrød":{
+        "Vare":"Familiebrød",
+        "Pris":39,
+        "Allergier":["Hvetemel","Nøtter"],
+        "Storrelse":"800 gram",
+        "Produsent":"KORN BAKERI",
+        "Bilde":"Bilder/Familiebrød.jpg"
+      },
+      "Solsikkebrød":{
+        "Vare":"Solsikkebrød",
+        "Pris":35,
+        "Allergier":["Hvete","Rug","Nøtter"],
+        "Storrelse":"770 gram",
+        "Produsent":"KORN BAKERI",
+        "Bilde":"Bilder/Solsikkebrød.jpg"
+      },
+      "GourmetGrov":{
+        "Vare":"Gourmet Grovbrød",
+        "Pris":32,
+        "Allergier":["Hvete","Bygg","Rug"],
+        "Storrelse":"670 gram",
+        "Produsent":"Baker Hansen",
+        "Bilde":"Bilder/Gourmet_grov.jpg"
+      },
+      "Gourmetloff":{
+        "Vare":"Gourmetloff",
+        "Pris":36,
+        "Allergier":["Hvete"],
+        "Storrelse":"520 gram",
+        "Produsent":"French Bakery",
+        "Bilde":"Bilder/Gourmet_loff.jpg"
+      },
+      "7Kornbrød":{
+        "Vare":"7-Kornbrød",
+        "Pris":42,
+        "Allergier":["Hvete","Rug","Sesamfrø","Etekli"],
+        "Storrelse":"700 gram",
+        "Produsent":"KORN BAKERI",
+        "Bilde":"Bilder/7Kornbrød.jpg"
+      }
+    },
+    "Melk":{
+      "1LHelTine":{
+        "Vare":"Tine Helmelk",
+        "Pris":19,
+        "Allergier":["Melk"],
+        "Storrelse":"1 Liter",
+        "Produsent":"TINE",
+        "Bilde":"Bilder/1LHelT.jpg"
+      },
+      "1LHelmelkQ":{
+        "Vare":"Q Helmelk",
+        "Pris":19,
+        "Allergier":["Melk"],
+        "Storrelse":"1 Liter",
+        "Produsent":"Q-Meieriene",
+        "Bilde":"Bilder/1LHelQ.jpg"
+      },
+      "1LLettT":{
+        "Vare":"Tine Lettmelk",
+        "Pris":21,
+        "Allergier":["Melk"],
+        "Storrelse":"1 Liter",
+        "Produsent":"Tine",
+        "Bilde":"Bilder/1LLettT.jpg"
+      },
+      "1LLettQ":{
+        "Vare":"Q Lettmelk",
+        "Pris":22,
+        "Allergier":["Melk"],
+        "Storrelse":"1 Liter",
+        "Produsent":"Q-Meieriene",
+        "Bilde":"Bilder/1LLettQ.jpg"
+      },
+      "1LEkstralettT":{
+        "Vare":"Tine Ekstra Lettmelk",
+        "Pris":21,
+        "Allergier":["Melk"],
+        "Storrelse":"1 Liter",
+        "Produsent":"Tine",
+        "Bilde":"Bilder/1LEkstralettT.jpg"
+      },
+      "1LEkstralettQ":{
+        "Vare":"Q Ekstra Lettmelk",
+        "Pris":20,
+        "Allergier":["Melk"],
+        "Storrelse":"1 Liter",
+        "Produsent":"Q-Meieriene",
+        "Bilde":"Bilder/1LEkstralettQ.jpg"
+      },
+      "1LSkummetT":{
+        "Vare":"Tine Skummetmelk",
+        "Pris":17,
+        "Allergier":["Melk"],
+        "Storrelse":"1 Liter",
+        "Produsent":"Tine",
+        "Bilde":"Bilder/1LSkummetT.jpg"
+      },
+      "1LSkummetQ":{
+        "Vare":"Q Skummetmelk",
+        "Pris":18,
+        "Allergier":["Melk"],
+        "Storrelse":"1 Liter",
+        "Produsent":"Q-Meieriene",
+        "Bilde":"Bilder/1LSkummetQ.jpg"
+      },
+      "1LLaktosefrilettT":{
+        "Vare":"Tine Laktosefri Lettmelk",
+        "Pris":29,
+        "Allergier":[""],
+        "Storrelse":"1 Liter",
+        "Produsent":"Tine",
+        "Bilde":"Bilder/1LLaktosefrilettT.jpg"
+      },
+      "1LLaktosefriEkstralettT":{
+        "Vare":"Tine Laktosefri Ekstra Lettmelk",
+        "Pris":33,
+        "Allergier":[""],
+        "Storrelse":"1 Liter",
+        "Produsent":"Tine",
+        "Bilde":"Bilder/1LLaktosefriEkstralettT.jpg"
+      }
+    },
+    "Brus":{
+      "15PM":{
+        "Vare":"Pepsi Max",
+        "Pris":34,
+        "Allergier":["Sukkerfri"],
+        "Storrelse":"1,5 Liter",
+        "Produsent":"Ringnes",
+        "Bilde":"Bilder/1.5PM.jpg"
+      },
+      "15Solo":{
+        "Vare":"Solo",
+        "Pris":36,
+        "Allergier":[""],
+        "Storrelse":"1,5 Liter",
+        "Produsent":"Ringnes",
+        "Bilde":"Bilder/1.5Solo.jpg"
+    },
+    "15Sprite":{
+        "Vare":"Sprite",
+        "Pris":40,
+        "Allergier":[""],
+        "Storrelse":"1,5 Liter",
+        "Produsent":"Coca Cola Company",
+        "Bilde":"Bilder/1.5Sprite.jpg"
+      },
+      "15ColaX":{
+        "Vare":"Cola X",
+        "Pris": 24,
+        "Allergier":[""],
+        "Storrelse":"1,5 Liter",
+        "Produsent":"Grans Bryggeri",
+        "Bilde":"Bilder/1.5ColaX.jpg"
+      },
+      "15FantaO":{
+        "Vare":"Fanta Orange",
+        "Pris":33,
+        "Allergier":[""],
+        "Storrelse":"1,5 Liter",
+        "Produsent":"Coca Cola Company",
+        "Bilde":"Bilder/1.5FantaO.jpg"
+      },
+      "15PMLime":{
+        "Vare":"Pepsi Max Lime",
+        "Pris":34,
+        "Allergier":["Sukkerfri"],
+        "Storrelse":"1,5 Liter",
+        "Produsent":"Ringnes",
+        "Bilde":"Bilder/1.5PmLime.jpg"
+      },
+      "10PakkLitenCola":{
+        "Vare":"Coca Cola",
+        "Pris":115,
+        "Allergier":[""],
+        "Storrelse":"10 x 0.33L",
+        "Produsent":"Coca Cola Company",
+        "Bilde":"Bilder/10PakkLitenCola.jpg"
+      },
+      "12PakkLitenPM":{
+        "Vare":"Pepsi Max",
+        "Pris":120,
+        "Allergier":["Sukkerfri"],
+        "Storrelse":"12 x 0.33L",
+        "Produsent":"Coca Cola Company",
+        "Bilde":"Bilder/12PakkLitenPM.jpg"
+      },
+      "4PakkLitenPM":{
+        "Vare":"Pepsi Max",
+        "Pris":45,
+        "Allergier":["Sukkerfri"],
+        "Storrelse":"4 x 0.33L",
+        "Produsent":"Coca Cola Company",
+        "Bilde":"Bilder/4PakkLitenPM.jpg"
+      },
+      "15FantaE":{
+        "Vare":"Fanta Exotic",
+        "Pris":33,
+        "Allergier":[""],
+        "Storrelse":"1,5 Liter",
+        "Produsent":"Ringnes",
+        "Bilde":"Bilder/1.5FantaE.jpg"
+      }
+    }
+  }
+}
