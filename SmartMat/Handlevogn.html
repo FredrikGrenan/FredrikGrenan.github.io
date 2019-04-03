@@ -23,14 +23,61 @@
 
   </head>
   <body>
-    <header>
-      <img src="Bilder/logo.jpg" alt="">
+    <header class="">
+      <a href="Index.html"><img id="Logo" src="Bilder/logo.jpg" alt=""></a>
     </header>
     <nav>
-      <ul>
-        <li><a href="Index.html"><i class="fas fa-home"></i> Hjem</a></li>
-        <li><a href="FinnVare.html"><i class="fas fa-carrot"></i> Varer</a></li>
-        <li><a href="Matforslag.html"><i class="fas fa-utensils"></i> Matforslag</a></li>
-        <li style="float:right;"><a href="Handlevogn.html"><i class="fas fa-shopping-cart"></i> Handlevogn</a></li>
-      </ul>
+      <div id="mySidenav" class="sidenav" >
+        <ul>
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a> </li>
+          <li><a href="Index.html"><i class="fas fa-home"></i> Forside</a></li>
+          <li><a href="FinnVare.html"><i class="fas fa-carrot"></i> Varer</a></li>
+          <button class="dropdown-btn"><i class="fas fa-dice-six"></i> Matforslag <i class="fas fa-chevron-down"></i>
+            <i class="fa fa-caret.down" ></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="Matforslag.html">   <i class="fas fa-coffee"></i> Frokost</a>
+            <a href="Matforslag.html">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
+            <a href="Matforslag.html">   <i class="fas fa-utensils"></i> Middag</a>
+          </div>
+        </ul>
+      </div>
+        <div class="">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Meny</span>
+        </div>
+
+
+<script>
+
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+</script>
+
     </nav>
+    <main class="">
+      <p>Handlevogn</p>
+    </main>
+    <footer></footer>
+  </body>
+</html>

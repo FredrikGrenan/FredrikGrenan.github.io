@@ -23,14 +23,14 @@
 
   </head>
   <body>
-    <header>
-      <img src="Bilder/logo.jpg" alt="">
+    <header class="">
+      <a href="Index.html"><img id="Logo" src="Bilder/logo.jpg" alt=""></a>
     </header>
     <nav>
       <div id="mySidenav" class="sidenav" >
         <ul>
           <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a> </li>
-          <li><a href="Index.html"><i class="fas fa-home"></i> Forside</a></li>
+          <li><a  class="active" href="Index.html"><i class="fas fa-home"></i> Forside</a></li>
           <li><a href="FinnVare.html"><i class="fas fa-carrot"></i> Varer</a></li>
           <button class="dropdown-btn"><i class="fas fa-dice-six"></i> Matforslag <i class="fas fa-chevron-down"></i>
             <i class="fa fa-caret.down" ></i>
@@ -76,9 +76,9 @@ for (i = 0; i < dropdown.length; i++) {
 
     </nav>
     <main class="">
-    <img class="center" style="width:100%" src="Bilder/levering.png" alt="">
+    <img class="center" style="width:100%" src="Bilder/levering2.jpg" alt="">
       <h4>Våre Middagsforslag</h4>
-    <section class="grid-11">
+    <section class="grid-11 sentrertTekst">
       <div class="">
 
       </div>
@@ -88,7 +88,7 @@ for (i = 0; i < dropdown.length; i++) {
           <p>Havregrøt er en energirik og rask frokost som inneholder de fleste næringstoffene kroppen trenger i løpet av dagen. Den er både billig, rask og veldig godt så den passer derfor til alle folk i alle aldre.</p>
         </div>
         <div class="">
-          <img class="center" src="Bilder/Havregrøt.jpg" alt="">
+          <img class="center responsive" src="Bilder/Havregrøt.jpg" alt="">
         </div>
       </section>
       <section class="span3">
@@ -97,7 +97,7 @@ for (i = 0; i < dropdown.length; i++) {
           <p>Pannekaker er en middag for hele familien, pannekakene er velsmakende, sunne og kan toppes med enhvers favoritter. Bacon, sjokolade, sukker eller bær er alltid velkommen til denne middagen. </p>
         </div>
         <div class="">
-          <img class="center" src="Bilder/Pannekaker.webp" alt="">
+          <img class="center responsive" src="Bilder/Pannekaker.webp" alt="">
         </div>
       </section>
       <section class="span3">
@@ -106,7 +106,7 @@ for (i = 0; i < dropdown.length; i++) {
           <p>Pasta er en lett og næringsrik middag. den kan kombineres med alt du kan tenke deg. Pastaen inneholder mye vitaminer og næringstoffer som kropper trenger etter en lang dag på jobb eller skole.</p>
         </div>
         <div class="">
-          <img class="center" src="Bilder/Pasta.jpg" alt="">
+          <img class="center responsive" src="Bilder/Pasta.jpg" alt="">
         </div>
       </section>
       <div class="">
@@ -138,7 +138,27 @@ for (i = 0; i < dropdown.length; i++) {
         <p>7</p>
       </div>
     </section>
+    <a href="FinnVare.html"><img class="center responsive" src="Bilder/Handle3.jpg" alt="Trykk her for å starte handlingen"></a>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <p>Vil du være med å forbedre denne nettsiden, send oss gjerne en tilbakemelding på SmartMat@gmail.com!
+        <br><br>Dette er en nettside laget til et skoleprosjekt. Jeg har ingen eierskap til noen av bildene på nettsiden og nettbutikken er kun et konsept, altså er det ikke en fungerende tjeneste. Nettsiden er laget av Fredrik Grenan, elev på Sandvika VGS</p>
+    </footer>
+
+    <script>
+      const main = document.querySelector("main");
+
+      const db = firebase.database();
+      const mat = db.ref("Mat");
+
+      function visMat(snapshot){
+        let MatSnap = snapshot.val();
+        let key = snapshot.key;
+        let nyttElement = document.createElement("article");
+        let type = ``;
+      }
+
+    </script>
+
   </body>
 </html>
