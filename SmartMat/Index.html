@@ -23,152 +23,147 @@
 
   </head>
   <body>
-    <header class="">
-      <a href="Index.html"><img id="Logo" src="Bilder/logo.jpg" alt=""></a>
-    </header>
     <nav>
       <div id="mySidenav" class="sidenav" >
         <ul>
           <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a> </li>
           <li><a  class="active" href="Index.html"><i class="fas fa-home"></i> Forside</a></li>
-          <li><a href="FinnVare.html"><i class="fas fa-carrot"></i> Varer</a></li>
-          <button class="dropdown-btn"><i class="fas fa-dice-six"></i> Matforslag <i class="fas fa-chevron-down"></i>
-            <i class="fa fa-caret.down" ></i>
-          </button>
-          <div class="dropdown-container">
-            <a href="Matforslag.html">   <i class="fas fa-coffee"></i> Frokost</a>
-            <a href="Matforslag.html">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
-            <a href="Matforslag.html">   <i class="fas fa-utensils"></i> Middag</a>
-          </div>
+          <button class="dropdown-btn"><i class="fas fa-carrot"></i> Varer <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-container">
+              <a href="FinnVare.html?id=alle"><i class="fas fa-store-alt"></i> Alle</a>
+              <a href="FinnVare.html?id=brød"><i class="fas fa-bread-slice"></i> Brød</a>
+              <a href="FinnVare.html?id=melk"><i class="fas fa-glass-whiskey"></i></i> Melk</a>
+              <a href="FinnVare.html?id=brus"><i class="fas fa-glass-martini-alt"></i> Brus</a>
+              <button class="dropdown-btn"><i class="fas fa-globe"></i> Pålegg <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-container">
+                  <a href="#"><i class="fas fa-drumstick-bite"></i> Kjøtt og Kyllingpålegg</a>
+                  <a href="#"><i class="fas fa-fish"></i> Fiskepålegg</a>
+                  <a href="#"><i class="fas fa-candy-cane"></i> Søtpålegg</a>
+                </div>
+            </div>
+          <button class="dropdown-btn"><i class="fas fa-dice-six"></i> Matforslag <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-container">
+              <a href="Matforslag.html">   <i class="fas fa-coffee"></i> Frokost</a>
+              <a href="Matforslag.html">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
+              <a href="Matforslag.html">   <i class="fas fa-utensils"></i> Middag</a>
+            </div>
         </ul>
       </div>
-        <div class="">
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Meny</span>
-        </div>
-
-
-<script>
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
-}
-
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-
-</script>
-
     </nav>
-    <main class="">
-    <img class="center" style="width:100%" src="Bilder/levering.jpg" alt="">
-<br>
-    <section class="grid-11">
+    <section id="hoved">
+      <header class="">
+        <a href="Index.html"><img id="Logo" src="Bilder/logo.jpg" alt=""></a>
+      </header>
       <div class="">
-
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Meny</span>
       </div>
-      <section class="span3">
+      <main class="">
+      <img class="center" style="width:100%" src="Bilder/levering.jpg" alt="">
+  <br>
+      <section class="grid-11">
+        <div class="">
 
-        <div class="container radiusmat">
-          <img src="Bilder/Havregrøt.jpg" alt="Havregrøt" style="width:100%;">
-          <div class="content">
-            <h1>Frokost</h1>
-            <p>En god frokost påvirker energi humør og gleden din gjennom hele dagen. trykk her for våre 4 forlsag til en superbra frokost!</p>
-          </div>
         </div>
+        <section class="span3">
 
-      </section>
-      <section class="span3 radiusmat">
-
-        <div class="container">
-          <img src="Bilder/Pannekaker.webp" alt="Havregrøt" style="width:100%;">
-          <div class="content">
-            <h1>Lunsj</h1>
-            <p>Lunsj kan være frukt, brødskiver, småbakst eller anndre retter. Her har vi laget 4 enkle retter som du kommer til å elske!</p>
+          <div class="container radiusmat">
+            <img src="Bilder/Havregrøt.jpg" alt="Havregrøt" style="width:100%;">
+            <div class="content">
+              <h1>Frokost</h1>
+              <p>En god frokost påvirker energien og humøret ditt gjennom hele dagen. trykk her for 4 forlsag til en superbra frokost!</p>
+            </div>
           </div>
-        </div>
 
-      </section>
-      <section class="span3 radiusmat">
+        </section>
+        <section class="span3 radiusmat">
 
-        <div class="container">
-          <img src="Bilder/Pasta.jpg" alt="Havregrøt" style="width:100%;">
-          <div class="content">
-            <h1>Middag</h1>
-            <p>Dagens største måltid er middagen. her har vi 4 retter for deg og din familie med næringen som kroppen trenger!</p>
+          <div class="container">
+            <img src="Bilder/Pannekaker.webp" alt="Havregrøt" style="width:100%;">
+            <div class="content">
+              <h1>Lunsj</h1>
+              <p>Lunsj kan være frukt, brødskiver, småbakst eller annet. Her har vi laget 4 enkle retter som du kommer til å elske!</p>
+            </div>
           </div>
+
+        </section>
+        <section class="span3 radiusmat">
+
+          <div class="container">
+            <img src="Bilder/Pasta.jpg" alt="Havregrøt" style="width:100%;">
+            <div class="content">
+              <h1>Middag</h1>
+              <p>Dagens største måltid er middagen. her har vi 4 retter for deg og din familie med næringen som kroppen trenger!</p>
+            </div>
+          </div>
+
+        </section>
+
+
         </div>
+        </section>
 
+      <h4 class="">Ukens Tilbud!</h4>
+      <section class="grid-7">
+        <div class="">
+          <p>1</p>
+        </div>
+        <div class="">
+          <p>2</p>
+        </div>
+        <div class="">
+          <p>3</p>
+        </div>
+        <div class="">
+          <p>4</p>
+        </div>
+        <div class="">
+          <p>5</p>
+        </div>
+        <div class="">
+          <p>6</p>
+        </div>
+        <div class="">
+          <p>7</p>
+        </div>
       </section>
-
-
-      </div>
-      </section>
-
-    <h4 class="">Ukens Tilbud!</h4>
-    <section class="grid-7">
-      <div class="">
-        <p>1</p>
-      </div>
-      <div class="">
-        <p>2</p>
-      </div>
-      <div class="">
-        <p>3</p>
-      </div>
-      <div class="">
-        <p>4</p>
-      </div>
-      <div class="">
-        <p>5</p>
-      </div>
-      <div class="">
-        <p>6</p>
-      </div>
-      <div class="">
-        <p>7</p>
-      </div>
+      <a href="FinnVare.html"><img class="center responsive" src="Bilder/Handle3.jpg" alt="Trykk her for å starte handlingen"></a>
+      </main>
+      <footer class="footer">
+        <p>Dette er en nettside laget til et skoleprosjekt. Jeg har ingen eierskap til noen av bildene på nettsiden og nettbutikken er kun et konsept, altså er det ikke en fungerende tjeneste. Nettsiden er laget av Fredrik Grenan, elev på Sandvika VGS</p>
+      </footer>
     </section>
-    <a href="FinnVare.html"><img class="center responsive" src="Bilder/Handle3.jpg" alt="Trykk her for å starte handlingen"></a>
-    </main>
-    <footer class="footer">
-      <p>Vil du være med å forbedre denne nettsiden, send oss gjerne en tilbakemelding på SmartMat@gmail.com!
-        <br><br>Dette er en nettside laget til et skoleprosjekt. Jeg har ingen eierskap til noen av bildene på nettsiden og nettbutikken er kun et konsept, altså er det ikke en fungerende tjeneste. Nettsiden er laget av Fredrik Grenan, elev på Sandvika VGS</p>
-    </footer>
+
+
 
     <script>
-      const main = document.querySelector("main");
+    // Script til sidebar
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("hoved").style.marginLeft = "250px";
+      //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
 
-      const db = firebase.database();
-      const mat = db.ref("Mat");
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("hoved").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
 
-      function visMat(snapshot){
-        let MatSnap = snapshot.val();
-        let key = snapshot.key;
-        let nyttElement = document.createElement("article");
-        let type = ``;
-      }
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
 
     </script>
-
   </body>
 </html>

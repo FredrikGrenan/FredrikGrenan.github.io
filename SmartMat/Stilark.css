@@ -123,25 +123,26 @@ h1{
   background-color: grey;
   transition: .6s
 }
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-  }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
   .sidenav a, .dropdown-btn {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
     background-color: black;
     border: none;
     width: 100%;
@@ -158,6 +159,7 @@ h1{
     top: 0;
     font-size: 36px;
     margin-left: 50px;
+    right: 25px;
   }
   .closebtn{
     left: 125px;
@@ -171,7 +173,7 @@ h1{
   float: right;
   padding-right: 8px;
 }
-  #main {
+  #hoved {
     transition: margin-left .5s;
     padding: 20px;
   }
@@ -179,12 +181,6 @@ h1{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-.HeaderEV{
-  display: grid;
-  grid-template-columns: 30% 10% 60%;
-  font-size: 30px;
-  margin: auto;
-}
 .EnkelVare{
   margin-left: 35%;
 }
@@ -215,5 +211,9 @@ h1{
 .Kategoriliste{
   text-decoration: none;
   list-style-type: none;
-  
+}
+.Bilde2{
+  width: 50%;
+  margin: 0 auto;
+  display: block;
 }

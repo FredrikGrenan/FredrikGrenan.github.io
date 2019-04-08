@@ -23,66 +23,40 @@
 
   </head>
   <body>
-    <header class="grid-3">
-      <div class="">
-        <a href="Index.html"><img id="Logo" src="Bilder/logo.jpg" alt=""></a>
-      </div>
-      <div class="">
-        <input type="search" name="" value="">
-      </div>
-      <div class="">
-        <a href="Handlevogn.html">knapp</a>
-      </div>
-    </header>
     <nav>
       <div id="mySidenav" class="sidenav" >
         <ul>
           <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a> </li>
-          <li><a href="Index.html"><i class="fas fa-home"></i> Forside</a></li>
-          <li><a href="FinnVare.html"><i class="fas fa-carrot"></i> Varer</a></li>
-          <button class="dropdown-btn"><i class="fas fa-dice-six"></i> Matforslag <i class="fas fa-chevron-down"></i>
-            <i class="fa fa-caret.down" ></i>
-          </button>
-          <div class="dropdown-container">
-            <a href="Matforslag.html">   <i class="fas fa-coffee"></i> Frokost</a>
-            <a href="Matforslag.html">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
-            <a href="Matforslag.html">   <i class="fas fa-utensils"></i> Middag</a>
-          </div>
+          <li><a  class="active" href="Index.html"><i class="fas fa-home"></i> Forside</a></li>
+          <button class="dropdown-btn"><i class="fas fa-carrot"></i> Varer <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-container">
+              <a href="FinnVare.html?id=alle"><i class="fas fa-store-alt"></i> Alle</a>
+              <a href="FinnVare.html?id=brød"><i class="fas fa-bread-slice"></i> Brød</a>
+              <a href="#"><i class="fas fa-glass-whiskey"></i></i> Melk</a>
+              <a href="#"><i class="fas fa-glass-martini-alt"></i> Brus</a>
+              <button class="dropdown-btn"><i class="fas fa-globe"></i> Pålegg <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-container">
+                  <a href="#"><i class="fas fa-drumstick-bite"></i> Kjøtt og Kyllingpålegg</a>
+                  <a href="#"><i class="fas fa-fish"></i> Fiskepålegg</a>
+                  <a href="#"><i class="fas fa-candy-cane"></i> Søtpålegg</a>
+                </div>
+            </div>
+          <button class="dropdown-btn"><i class="fas fa-dice-six"></i> Matforslag <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-container">
+              <a href="Matforslag.html">   <i class="fas fa-coffee"></i> Frokost</a>
+              <a href="Matforslag.html">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
+              <a href="Matforslag.html">   <i class="fas fa-utensils"></i> Middag</a>
+            </div>
         </ul>
       </div>
-        <div class="">
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Meny</span>
-        </div>
-
-
-<script>
-
-function openNav() {
-document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
-}
-
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-
-</script>
-
     </nav>
+    <section id="hoved">
+      <header class="">
+        <a href="Index.html"><img id="Logo" src="Bilder/logo.jpg" alt=""></a>
+      </header>
+      <div class="">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Meny</span>
+      </div>
     <main class="gridVarer">
       <div class="">
         <o class="Kategoriliste">
@@ -111,21 +85,44 @@ for (i = 0; i < dropdown.length; i++) {
       const kkpålegg = db.ref("Mat/Paalegg/KyllingogKjottpaalegg")
       const fpålegg = db.ref("Mat/Paalegg/Fiskepaalegg")
 
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var id = url.searchParams.get("id");
 
-      // Javascript-funksjon for å generere HTML-kode for dyr
+      if(id == "alle"){
+        visAlle();
+      }
+      if(id == "brød"){
+        visBrød();
+      }
+      if(id == "melk"){
+        visMelk();
+      }
+      if(id == "brus"){
+        visBrus();
+      }
       function genererHTML(snapshot){
         let vare = snapshot.val();
-        alleVarer.innerHTML +=`
-            <article class="vare">
-              <img src="${vare.Bilde}" alt="Bildet ikke funnet">
-              <h1>${vare.Vare}</h1>
-              <p>Pris: ${vare.Pris}</p>
-              <p>Produsent: ${vare.Produsent}</p>
-              <p>Storrelse: ${vare.Storrelse}</p>
-              <p>Allergier: ${vare.Allergier}</p>
-            </article>
-        `;
-      }
+        let key = snapshot.key;
+        let parent = snapshot.ref.parent.key;
+        if(parent == "KyllingogKjottpaalegg" || key == "Fiskepaalegg"){
+          parent = "Paalegg/"+snapshot.ref.parent.key;
+        }
+          let ref = parent + "/" + key;
+          alleVarer.innerHTML +=`
+              <article class="vare">
+                <img src="${vare.Bilde}" alt="Bilde ikke funnet">
+                <h1>${vare.Vare}</h1>
+                <p>Pris: ${vare.Pris}kr</p>
+                <p>Produsent: ${vare.Produsent}</p>
+                <p>Storrelse: ${vare.Storrelse}</p>
+                <p>Allergier: ${vare.Allergier}</p>
+                 <a href="EnkelVare.html?id=${ref}">Detaljer</a>
+              </article>
+          `;
+        }
+
+
 
       function visAlle(){
         alleVarer.innerHTML = ``;
@@ -156,11 +153,37 @@ for (i = 0; i < dropdown.length; i++) {
         alleVarer.innerHTML = ``
         fpålegg.on("child_added",genererHTML);
       }
+      //visAlle();
+    </script>
+    <script>
+    // Script til sidebar
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("hoved").style.marginLeft = "250px";
+      //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
 
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("hoved").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
 
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
 
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
 
-      visAlle();
     </script>
   </body>
 </html>
