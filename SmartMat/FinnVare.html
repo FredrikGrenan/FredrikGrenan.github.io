@@ -85,15 +85,82 @@ for (i = 0; i < dropdown.length; i++) {
     </nav>
     <main class="gridVarer">
       <div class="">
-        <p>Liste med kategorier</p>
+        <o class="Kategoriliste">
+          <li><button onclick="visBrød()">Brød</button></li>
+          <li><button onclick="visMelk()">Melk</button></li>
+          <li><button onclick="visBrus()">Brus</button></li>
+          <li><button onclick="viskkpålegg()">Kylling og Kjøttpålegg</button></li>
+          <li><button onclick="visfpålegg()">Fiskepålegg</button></li>
+        </ol>
       </div>
       <div class="AlleVarer grid-4">
-        <p>ny grid med alle varer i</p>
+
       </div>
       <div class="">
-        <p>usikker på om det skal være noe her eller ikke</p>
+        <p>usikker på om det skal være noe her eller ikke, kanskje putte inn noe reklame</p>
       </div>
     </main>
     <footer></footer>
+
+    <script type="text/javascript">
+      const alleVarer = document.querySelector(".AlleVarer");
+      const db = firebase.database();
+      const brød = db.ref("Mat/Brød")
+      const melk = db.ref("Mat/Melk")
+      const brus = db.ref("Mat/Brus")
+      const kkpålegg = db.ref("Mat/Paalegg/KyllingogKjottpaalegg")
+      const fpålegg = db.ref("Mat/Paalegg/Fiskepaalegg")
+
+
+      // Javascript-funksjon for å generere HTML-kode for dyr
+      function genererHTML(snapshot){
+        let vare = snapshot.val();
+        alleVarer.innerHTML +=`
+            <article class="vare">
+              <img src="${vare.Bilde}" alt="Bildet ikke funnet">
+              <h1>${vare.Vare}</h1>
+              <p>Pris: ${vare.Pris}</p>
+              <p>Produsent: ${vare.Produsent}</p>
+              <p>Storrelse: ${vare.Storrelse}</p>
+              <p>Allergier: ${vare.Allergier}</p>
+            </article>
+        `;
+      }
+
+      function visAlle(){
+        alleVarer.innerHTML = ``;
+        brød.on("child_added",genererHTML);
+        melk.on("child_added",genererHTML);
+        brus.on("child_added",genererHTML);
+        kkpålegg.on("child_added",genererHTML);
+        fpålegg.on("child_added",genererHTML);
+      }
+
+      function visBrød(){
+        alleVarer.innerHTML = ``
+        brød.on("child_added",genererHTML);
+      }
+      function visMelk(){
+        alleVarer.innerHTML = ``
+        melk.on("child_added",genererHTML);
+      }
+      function visBrus(){
+        alleVarer.innerHTML = ``
+        brus.on("child_added",genererHTML);
+      }
+      function viskkpålegg(){
+        alleVarer.innerHTML = ``
+        kkpålegg.on("child_added",genererHTML);
+      }
+      function visfpålegg(){
+        alleVarer.innerHTML = ``
+        fpålegg.on("child_added",genererHTML);
+      }
+
+
+
+
+      visAlle();
+    </script>
   </body>
 </html>

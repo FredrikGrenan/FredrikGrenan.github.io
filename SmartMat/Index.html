@@ -50,11 +50,15 @@
 <script>
 
 function openNav() {
-document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
 }
 
 var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -76,40 +80,46 @@ for (i = 0; i < dropdown.length; i++) {
 
     </nav>
     <main class="">
-    <img class="center" style="width:100%" src="Bilder/levering2.jpg" alt="">
-      <h4>Våre Middagsforslag</h4>
-    <section class="grid-11 sentrertTekst">
+    <img class="center" style="width:100%" src="Bilder/levering.jpg" alt="">
+<br>
+    <section class="grid-11">
       <div class="">
 
       </div>
       <section class="span3">
-        <div class="">
-          <h5>Havregrøt</h5>
-          <p>Havregrøt er en energirik og rask frokost som inneholder de fleste næringstoffene kroppen trenger i løpet av dagen. Den er både billig, rask og veldig godt så den passer derfor til alle folk i alle aldre.</p>
+
+        <div class="container radiusmat">
+          <img src="Bilder/Havregrøt.jpg" alt="Havregrøt" style="width:100%;">
+          <div class="content">
+            <h1>Frokost</h1>
+            <p>En god frokost påvirker energi humør og gleden din gjennom hele dagen. trykk her for våre 4 forlsag til en superbra frokost!</p>
+          </div>
         </div>
-        <div class="">
-          <img class="center responsive" src="Bilder/Havregrøt.jpg" alt="">
-        </div>
+
       </section>
-      <section class="span3">
-        <div class="">
-          <h5>Pannekaker</h5>
-          <p>Pannekaker er en middag for hele familien, pannekakene er velsmakende, sunne og kan toppes med enhvers favoritter. Bacon, sjokolade, sukker eller bær er alltid velkommen til denne middagen. </p>
+      <section class="span3 radiusmat">
+
+        <div class="container">
+          <img src="Bilder/Pannekaker.webp" alt="Havregrøt" style="width:100%;">
+          <div class="content">
+            <h1>Lunsj</h1>
+            <p>Lunsj kan være frukt, brødskiver, småbakst eller anndre retter. Her har vi laget 4 enkle retter som du kommer til å elske!</p>
+          </div>
         </div>
-        <div class="">
-          <img class="center responsive" src="Bilder/Pannekaker.webp" alt="">
-        </div>
+
       </section>
-      <section class="span3">
-        <div class="">
-          <h5>Pasta</h5>
-          <p>Pasta er en lett og næringsrik middag. den kan kombineres med alt du kan tenke deg. Pastaen inneholder mye vitaminer og næringstoffer som kropper trenger etter en lang dag på jobb eller skole.</p>
+      <section class="span3 radiusmat">
+
+        <div class="container">
+          <img src="Bilder/Pasta.jpg" alt="Havregrøt" style="width:100%;">
+          <div class="content">
+            <h1>Middag</h1>
+            <p>Dagens største måltid er middagen. her har vi 4 retter for deg og din familie med næringen som kroppen trenger!</p>
+          </div>
         </div>
-        <div class="">
-          <img class="center responsive" src="Bilder/Pasta.jpg" alt="">
-        </div>
+
       </section>
-      <div class="">
+
 
       </div>
       </section>

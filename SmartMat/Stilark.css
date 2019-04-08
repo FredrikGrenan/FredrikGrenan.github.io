@@ -1,3 +1,6 @@
+main{
+  background-color:
+}
 ul{
   list-style-type: none;
   margin: 0;
@@ -6,7 +9,7 @@ ul{
   background-color: black;
 }
 
-li{
+ul li{
   float: left;
 }
 li a{
@@ -27,7 +30,11 @@ section p{
   padding-left: 15px;
   padding-right: 15px;
 }
+h1{
+  padding-left: 15px;
+}
 
+}
 .active{
   background-color: green;
 }
@@ -88,9 +95,6 @@ section p{
   grid-gap: none;
   border-radius: 15px;
 }
-.grid-11 section:hover{
-  background-color: lightgrey;
-  transition: 0.5s;
 
 }
 .dekkende{
@@ -187,4 +191,29 @@ section p{
 #Logo{
   padding-top: 20px;
   padding-left: 20px;
+}
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.content{
+  font-size: 15px;
+}
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  margin-bottom: 19px;
+}
+.radiusmat{
+  border-radius: 15px;
+}
+.Kategoriliste{
+  text-decoration: none;
+  list-style-type: none;
+  
 }

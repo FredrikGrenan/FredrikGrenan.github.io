@@ -184,8 +184,8 @@
         "Produsent":"Ringnes",
         "Bilde":"Bilder/1.5Solo.jpg",
         "Bilde2":"Bilder/1.5SoloStor.jpg"
-    },
-    "15Sprite":{
+      },
+      "15Sprite":{
         "Vare":"Sprite",
         "Pris":40,
         "Allergier":[""],
@@ -256,6 +256,192 @@
         "Produsent":"Ringnes",
         "Bilde":"Bilder/1.5FantaE.jpg",
         "Bilde2":"Bilder/1.5FantaEStor.jpg"
+      }
+    },
+    "Paalegg":{
+      "KyllingogKjottpaalegg":{
+        "LovskaretPepperskinke":{
+          "Vare":"Løvskåret Pepperskinke",
+          "Pris":33,
+          "Allergier":[""],
+          "Storrelse":"100 gram",
+          "Produsent":"Sørlandskjøtt",
+          "Bilde":"Bilder/LovskaretPepperskinke.jpg",
+          "Bilde2":"Bilder/LovskaretPepperskinkeStor.jpg"
+        },
+        "Provencefilet":{
+          "Vare":"Provencefilet",
+          "Pris":32,
+          "Allergier":[""],
+          "Storrelse":"100 gram",
+          "Produsent":"Sørlandskjøtt",
+          "Bilde":"Bilder/Provencefilet.jpg",
+          "Bilde2":"Bilder/ProvencefiletStor.jpg"
+        },
+        "SvinestekavFilet":{
+          "Vare":"Svinestek av Filet",
+          "Pris":35,
+          "Allergier":[""],
+          "Storrelse":"100 gram",
+          "Produsent":"Sørlandskjøtt",
+          "Bilde":"Bilder/SvinestekavFilet.jpg",
+          "Bilde2":"Bilder/SvinestekavFiletStor.jpg"
+        },
+        "Hawaiiplomme":{
+          "Vare":"Hawaiiplomme",
+          "Pris":30,
+          "Allergier":[""],
+          "Storrelse":"100 gram",
+          "Produsent":"Sørlandskjøtt",
+          "Bilde":"Bilder/Hawaiiplomme.jpg",
+          "Bilde2":"Bilder/HawaiiplommeStor.jpg"
+        },
+        "BokeroktHGSkinke":{
+          "Vare":"Bøkerøkt Herregårdskinke",
+          "Pris":37,
+          "Allergier":[""],
+          "Storrelse":"100 gram",
+          "Produsent":"Sørlandskjøtt",
+          "Bilde":"Bilder/BokeroktHGSkinke.jpg",
+          "Bilde2":"Bilder/BokeroktHGSkinkeStor.jpg"
+        },
+        "VarBesteSkinke":{
+          "Vare":"Vår Beste Skinke",
+          "Pris":36,
+          "Allergier":[""],
+          "Storrelse":"100 gram",
+          "Produsent":"Sørlandskjøtt",
+          "Bilde":"Bilder/VarBesteSkinke.jpg",
+          "Bilde2":"Bilder/VarBesteSkinkeStor.jpg"
+        },
+        "Roastbeef":{
+          "Vare":"Roastbeef",
+          "Pris":29,
+          "Allergier":[""],
+          "Storrelse":"100 gram",
+          "Produsent":"Sørlandskjøtt",
+          "Bilde":"Bilder/Roastbeef.jpg",
+          "Bilde2":"Bilder/RoastbeefStor.jpg"
+        },
+        "SkinkeLovtynn":{
+          "Vare":"Skinke Løvtynn",
+          "Pris":37,
+          "Allergier":[""],
+          "Storrelse":"110 gram",
+          "Produsent":"Gilde",
+          "Bilde":"Bilder/SkinkeLovtynn.jpg",
+          "Bilde2":"Bilder/SkinkeLovtynnStor.jpg"
+        },
+        "HamburgerryggLovtynn":{
+          "Vare":"Hamburgerrygg Løvtynn",
+          "Pris":33,
+          "Allergier":[""],
+          "Storrelse":"110 gram",
+          "Produsent":"Gilde",
+          "Bilde":"Bilder/HamburgerryggLovtynn.jpg",
+          "Bilde2":"Bilder/HamburgerryggLovtynnStor.jpg"
+        },
+        "Krydderskinke":{
+          "Vare":"Krydderskinke",
+          "Pris":30,
+          "Allergier":[""],
+          "Storrelse":"110 gram",
+          "Produsent":"Gilde",
+          "Bilde":"Bilder/Krydderskinke.jpg",
+          "Bilde2":"Bilder/KrydderskinkeStor.jpg"
+        }
+      },
+      "Fiskepaalegg":{
+        "VarmroktPepperlaks":{
+          "Vare":"Varmrøkt Pepperlaks",
+          "Pris":106,
+          "Allergier":["Laks"],
+          "Storrelse":"280 gram",
+          "Produsent":"Troll Salmon",
+          "Bilde":"Bilder/VarmroktPepperlaks.jpg",
+          "Bilde2":"Bilder/VarmroktPepperlaksStor.jpg"
+        },
+        "VarmroktPepperlaks2":{
+          "Vare":"Varmrøkt Pepperlaks",
+          "Pris":46,
+          "Allergier":["Laks"],
+          "Storrelse":"150 gram",
+          "Produsent":"Norsk Sjømat",
+          "Bilde":"Bilder/VarmroktPepperlaks2.jpg",
+          "Bilde2":"Bilder/VarmroktPepperlaks2Stor.jpg"
+        },
+        "RoktLaksSkivet":{
+          "Vare":"Røkt Laks, skivet",
+          "Pris":50,
+          "Allergier":["Laks"],
+          "Storrelse":"150 gram",
+          "Produsent":"Norsk Sjømat",
+          "Bilde":"Bilder/RoktLaksSkivet.jpg",
+          "Bilde2":"Bilder/RoktLaksSkivetStor.jpg"
+        },
+        "RoktOrretSkivet":{
+          "Vare":"Røkt Ørret, Skivet",
+          "Pris":101,
+          "Allergier":["Ørret"],
+          "Storrelse":"350 gram",
+          "Produsent":"Maxmat",
+          "Bilde":"Bilder/RoktOrretSkivet.jpg",
+          "Bilde2":"Bilder/RoktOrretSkivetStor.jpg"
+        },
+        "RoktLaks":{
+          "Vare":"Røkt Laks",
+          "Pris":98,
+          "Allergier":["Laks"],
+          "Storrelse":"350 gram",
+          "Produsent":"Maxmat",
+          "Bilde":"Bilder/RoktLaks.jpg",
+          "Bilde2":"Bilder/RoktLaksStor.jpg"
+        },
+        "Stabbur-makrell":{
+          "Vare":"Stabbur-Makrell",
+          "Pris":34,
+          "Allergier":["Makrell"],
+          "Storrelse":"185 gram",
+          "Produsent":"Stabburet",
+          "Bilde":"Bilder/Stabbur-makrell.jpg",
+          "Bilde2":"Bilder/Stabbur-makrellStor.jpg"
+        },
+        "SMHF":{
+          "Vare":"Stabbur-Makrell Hakket Filet",
+          "Pris":15,
+          "Allergier":["Makrell"],
+          "Storrelse":"110 gram",
+          "Produsent":"Stabburet",
+          "Bilde":"Bilder/SMHF.jpg",
+          "Bilde2":"Bilder/SMHFStor.jpg"
+        },
+        "SMIT":{
+          "Vare":"Stabbur-Makrell i tomat",
+          "Pris":16,
+          "Allergier":["Makrell"],
+          "Storrelse":"110 gram",
+          "Produsent":"Stabburet",
+          "Bilde":"Bilder/SMIT.jpg",
+          "Bilde2":"Bilder/SMITStor.jpg"
+        },
+        "PMIO":{
+          "Vare":"Peppermakrell i tomat",
+          "Pris":33,
+          "Allergier":["Makrell"],
+          "Storrelse":"80 gram",
+          "Produsent":"Stabburet",
+          "Bilde":"Bilder/PMIO.jpg",
+          "Bilde2":"Bilder/PMIOStor.jpg"
+        },
+        "MIT":{
+          "Vare":"Makrell i tomat",
+          "Pris":15,
+          "Allergier":["Makrell"],
+          "Storrelse":"170 gram",
+          "Produsent":"Stabburet",
+          "Bilde":"Bilder/MIT.jpg",
+          "Bilde2":"Bilder/MITStor.jpg"
+        }
       }
     }
   }
