@@ -80,7 +80,7 @@
         "Pris":19,
         "Allergier":["Melk"],
         "Storrelse":"1 Liter",
-        "Produsent":"TINE",
+        "Produsent":"Tine",
         "Bilde":"Bilder/1LHelT.jpg",
         "Bilde2":"Bilder/1LHelTStor.jpg"
       },
@@ -441,6 +441,171 @@
           "Produsent":"Stabburet",
           "Bilde":"Bilder/MIT.jpg",
           "Bilde2":"Bilder/MITStor.jpg"
+        }
+      },
+      "Sotpaalegg":{
+        "PeaBut":{
+          "Vare":"Peanutbutter",
+          "Pris":39,
+          "Allergier":["Peanøtter"],
+          "Storrelse":"350 gram",
+          "Produsent":"Mills",
+          "Bilde":"Bilder/PeaBut.jpg",
+          "Bilde2":"Bilder/PeaButStor.jpg"
+        },
+        "Sjokade":{
+          "Vare":"Sjokade",
+          "Pris":32,
+          "Allergier":["Peanøtter"],
+          "Storrelse":"500 gram",
+          "Produsent":"Orkla",
+          "Bilde":"Bilder/Sjokade.jpg",
+          "Bilde2":"Bilder/SjokadeStor.jpg"
+        },
+        "Hapa":{
+          "Vare":"Hapå",
+          "Pris":34,
+          "Allergier":["Peanøtter"],
+          "Storrelse":"310 gram",
+          "Produsent":"O Kavli",
+          "Bilde":"Bilder/Hapå.jpg",
+          "Bilde2":"Bilder/HapåStor.jpg"
+        },
+        "SolsikkeHonning":{
+          "Vare":"Solsikkehonning",
+          "Pris":63,
+          "Allergier":[""],
+          "Storrelse":"350 gram",
+          "Produsent":"Honningcentralen",
+          "Bilde":"Bilder/SolsikkeHonning.jpg",
+          "Bilde2":"Bilder/SolsikkeHonningStor.jpg"
+        },
+        "FlytendeAkasiehonning":{
+          "Vare":"Flytende Akasihonning",
+          "Pris":60,
+          "Allergier":[""],
+          "Storrelse":"350 gram",
+          "Produsent":"Honningcentralen",
+          "Bilde":"Bilder/FlytendeAkasiehonning.jpg",
+          "Bilde2":"Bilder/FlytendeAkasiehonningStor.jpg"
+        },
+        "Lynghonning":{
+          "Vare":"Lynghonning",
+          "Pris":60,
+          "Allergier":[""],
+          "Storrelse":"160 gram",
+          "Produsent":"Lien Gård",
+          "Bilde":"Bilder/Lynghonning.jpg",
+          "Bilde2":"Bilder/LynghonningStor.jpg"
+        },
+        "Sommerhonning":{
+          "Vare":"Sommerhonning",
+          "Pris":59,
+          "Allergier":[""],
+          "Storrelse":"160 gram",
+          "Produsent":"Lien Gård",
+          "Bilde":"Bilder/Sommerhonning.jpg",
+          "Bilde2":"Bilder/SommerhonningStor.jpg"
+        },
+        "Fjellhonning":{
+          "Vare":"Fjellhonning",
+          "Pris":66,
+          "Allergier":[""],
+          "Storrelse":"350 gram",
+          "Produsent":"Honningcentralen",
+          "Bilde":"Bilder/Fjellhonning.jpg",
+          "Bilde2":"Bilder/FjellhonningStor.jpg"
+        },
+        "BlomsterhonningMørk":{
+          "Vare":"Blomsterhonning Mørk",
+          "Pris":70,
+          "Allergier":[""],
+          "Storrelse":"350",
+          "Produsent":"Honningcentralen",
+          "Bilde":"Bilder/BlomsterhonningMørk.jpg",
+          "Bilde2":"Bilder/BlomsterhonningMørkStor.jpg"
+        },
+        "BringebærhonningMyk":{
+          "Vare":"Bringebærhonning Myk",
+          "Pris":92,
+          "Allergier":[""],
+          "Storrelse":"350 gram",
+          "Produsent":"Kjartan Dahl",
+          "Bilde":"Bilder/BringebærhonningMyk.jpg",
+          "Bilde2":"Bilder/BringebærhonningMykStor.jpg"
+        },
+        "LynghonningKraftig":{
+          "Vare":"Lynghonning Kraftig",
+          "Pris":92,
+          "Allergier":[""],
+          "Storrelse":"350 gram",
+          "Produsent":"Kjartan Dahl",
+          "Bilde":"Bilder/LynghonningKraftig.jpg",
+          "Bilde2":"Bilder/LynghonningKraftigStor.jpg"
+        },
+        "SkogshonningRen":{
+          "Vare":"Skogshonning Ren",
+          "Pris":92,
+          "Allergier":[""],
+          "Storrelse":"350 gram",
+          "Produsent":"Kjartan Dahl",
+          "Bilde":"Bilder/SkogshonningRen.jpg",
+          "Bilde2":"Bilder/SkogshonningRenStor.jpg"
+        },
+        "Lynghonning2":{
+          "Vare":"Lynghonning",
+          "Pris":77,
+          "Allergier":[""],
+          "Storrelse":"250 gram",
+          "Produsent":"Stavland Hermetikk",
+          "Bilde":"Bilder/Lynghonning2.jpg",
+          "Bilde2":"Bilder/Lynghonning2Stor.jpg"
+        },
+
+        "Ektehonning":{
+          "Vare":"Ekte Honning",
+          "Pris":66,
+          "Allergier":[""],
+          "Storrelse":"350 gram",
+          "Produsent":"Honningcentralen",
+          "Bilde":"Bilder/Ektehonning.jpg",
+          "Bilde2":"Bilder/EktehonningStor.jpg"
+        },
+        "NugattiAir":{
+          "Vare":"Nugatti Air",
+          "Pris":32,
+          "Allergier":["Nøtter"],
+          "Storrelse":"340 gram",
+          "Produsent":"Orkla",
+          "Bilde":"Bilder/NugattiAir.jpg",
+          "Bilde2":"Bilder/NugattiAirStor.jpg"
+        },
+        "NugattiMax":{
+          "Vare":"Nugatti Max",
+          "Pris":40,
+          "Allergier":["Nøtter"],
+          "Storrelse":"450 gram",
+          "Produsent":"Orkla",
+          "Bilde":"Bilder/NugattiMax.jpg",
+          "Bilde2":"Bilder/NugattiMaxStor.jpg"
+        },
+        "NugattiSmash":{
+          "Vare":"Nugatti Søtt, Salt og Sprøtt",
+          "Pris":45,
+          "Allergier":["Nøtter"],
+          "Storrelse":"325 gram",
+          "Produsent":"Orkla",
+          "Bilde":"Bilder/NugattiSmash.jpg",
+          "Bilde2":"Bilder/NugattiSmashStor.jpg"
+        },
+        "Nugatti":{
+          "Vare":"Nugatti",
+          "Pris":23,
+          "Allergier":["Nøtter"],
+          "Storrelse":"500 gram",
+          "Produsent":"Orkla",
+          "Bilde":"Bilder/Nugatti.jpg",
+          "Bilde2":"Bilder/NugattiStor.jpg"
         }
       }
     }

@@ -59,13 +59,15 @@
       </div>
     <main class="gridVarer">
       <div class="">
-        <o class="Kategoriliste">
-          <li><button onclick="visBrød()">Brød</button></li>
-          <li><button onclick="visMelk()">Melk</button></li>
-          <li><button onclick="visBrus()">Brus</button></li>
-          <li><button onclick="viskkpålegg()">Kylling og Kjøttpålegg</button></li>
-          <li><button onclick="visfpålegg()">Fiskepålegg</button></li>
-        </ol>
+        <div class="Kategoriliste">
+          <button class="MatKnapp" onclick="visAlle()">Alle</button>
+          <button class="MatKnapp" onclick="visBrød()">Brød</button>
+          <button class="MatKnapp" onclick="visMelk()">Melk</button>
+          <button class="MatKnapp" onclick="visBrus()">Brus</button>
+          <button class="MatKnapp" onclick="viskkpålegg()">Kylling og Kjøttpålegg</button>
+          <button class="MatKnapp" onclick="visfpålegg()">Fiskepålegg</button>
+          <button class="MatKnapp" onclick="visSøtpålegg()">Søtpålegg</button>
+        </div>
       </div>
       <div class="AlleVarer grid-4">
 
@@ -84,6 +86,7 @@
       const brus = db.ref("Mat/Brus")
       const kkpålegg = db.ref("Mat/Paalegg/KyllingogKjottpaalegg")
       const fpålegg = db.ref("Mat/Paalegg/Fiskepaalegg")
+      const søtpålegg = db.ref("Mat/Paalegg/Sotpaalegg")
 
       var url_string = window.location.href;
       var url = new URL(url_string);
@@ -101,23 +104,38 @@
       if(id == "brus"){
         visBrus();
       }
+      if (id == "Paalegg/KyllingogKjottpaalegg") {
+        viskkpålegg();
+      }
+      if (id == "Paalegg/Fiskepaalegg") {
+        visfpålegg();
+      }
+      if (id == "Paalegg/Sotpaalegg") {
+        visSøtpålegg();
+      }
       function genererHTML(snapshot){
         let vare = snapshot.val();
         let key = snapshot.key;
         let parent = snapshot.ref.parent.key;
-        if(parent == "KyllingogKjottpaalegg" || key == "Fiskepaalegg"){
+        if(parent == "KyllingogKjottpaalegg" || parent == "Fiskepaalegg" || parent == "Sotpaalegg"){
           parent = "Paalegg/"+snapshot.ref.parent.key;
         }
           let ref = parent + "/" + key;
           alleVarer.innerHTML +=`
               <article class="vare">
-                <img src="${vare.Bilde}" alt="Bilde ikke funnet">
-                <h1>${vare.Vare}</h1>
-                <p>Pris: ${vare.Pris}kr</p>
-                <p>Produsent: ${vare.Produsent}</p>
-                <p>Storrelse: ${vare.Storrelse}</p>
-                <p>Allergier: ${vare.Allergier}</p>
-                 <a href="EnkelVare.html?id=${ref}">Detaljer</a>
+
+                 <a href="EnkelVare.html?id=${ref}">
+                  <div>
+                   <img src="${vare.Bilde}" alt="Bilde ikke funnet">
+                   </div>
+                   <h1>${vare.Vare}</h1>
+                 </a>
+                 <div class="vareInfo" >
+                   <p>Pris: ${vare.Pris}kr</p>
+                   <p>Produsent: ${vare.Produsent}</p>
+                   <p>Storrelse: ${vare.Storrelse}</p>
+                   <p>Allergier: ${vare.Allergier}</p>
+                   </div>
               </article>
           `;
         }
@@ -131,6 +149,7 @@
         brus.on("child_added",genererHTML);
         kkpålegg.on("child_added",genererHTML);
         fpålegg.on("child_added",genererHTML);
+        søtpålegg.on("child_added",genererHTML);
       }
 
       function visBrød(){
@@ -152,6 +171,10 @@
       function visfpålegg(){
         alleVarer.innerHTML = ``
         fpålegg.on("child_added",genererHTML);
+      }
+      function visSøtpålegg() {
+        alleVarer.innerHTML = ``
+        søtpålegg.on("child_added",genererHTML);
       }
       //visAlle();
     </script>
