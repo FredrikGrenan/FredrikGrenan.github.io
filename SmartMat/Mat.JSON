@@ -696,45 +696,45 @@
       }
     },
     "Middag":{
-      "Nokkel6":{
-        "Overskrift":"blablabla",
-        "Tid":"Tall",
-        "Bemerkning":"blablabla",
-        "Tekst":"blablabla",
+      "KbmTS":{
+        "Overskrift":"Kjøttboller med tomatsaus og pasta",
+        "Tid":"20-40",
+        "Bemerkning":"Enkel",
+        "Tekst":"Dette er kanskje den aller mest populære pastaretten hos den yngre garde, etter pasta bolognese. Selv om kjøttboller og tomatsaus er superenkelt å lage, smaker det himmelsk og mer til. ",
         "Ingredienser":"kanskje noe her",
         "Innstruks":"blablabla",
-        "Bilde":"Bilder/blablabla.jpg ",
-        "Bilde2":"Bilder/blablabla.jpg"
+        "Bilde":"Bilder/KbmTS.jpg ",
+        "Bilde2":"Bilder/KbmTSStor.jpg"
       },
-      "Nokkel6":{
-        "Overskrift":"blablabla",
-        "Tid":"Tall",
-        "Bemerkning":"blablabla",
-        "Tekst":"blablabla",
+      "MT":{
+        "Overskrift":"Minitacos",
+        "Tid":"20-40",
+        "Bemerkning":"Enkel",
+        "Tekst":"Dette er håndmat som kommer til å slå an blant barn i alle aldre! Perfekt som helgekos eller i et barneselskap.",
         "Ingredienser":"kanskje noe her",
         "Innstruks":"blablabla",
-        "Bilde":"Bilder/blablabla.jpg ",
-        "Bilde2":"Bilder/blablabla.jpg"
+        "Bilde":"Bilder/MT.jpg ",
+        "Bilde2":"Bilder/MTStor.jpg"
       },
-      "Nokkel6":{
-        "Overskrift":"blablabla",
-        "Tid":"Tall",
-        "Bemerkning":"blablabla",
-        "Tekst":"blablabla",
+      "Mbmkp":{
+        "Overskrift":"Minuttbiff med kanaripoteter",
+        "Tid":"40-60",
+        "Bemerkning":"Enkel",
+        "Tekst":"Skjærer du biffen i tynne skiver før du steker den tar det ikke stort mer enn et minutt i stekepanna eller på grillen før den er perfekt stekt og ferdig til servering. Små ferskpoteter kokt med salt og en enkel, men god, majonesdressing er deilig tilbehør.",
         "Ingredienser":"kanskje noe her",
         "Innstruks":"blablabla",
-        "Bilde":"Bilder/blablabla.jpg ",
-        "Bilde2":"Bilder/blablabla.jpg"
+        "Bilde":"Bilder/Mbmkp.jpg ",
+        "Bilde2":"Bilder/MbmkpStor.jpg"
       },
-      "Nokkel6":{
-        "Overskrift":"blablabla",
-        "Tid":"Tall",
-        "Bemerkning":"blablabla",
-        "Tekst":"blablabla",
+      "TB":{
+        "Overskrift":"Tacoburger",
+        "Tid":"20-40",
+        "Bemerkning":"Middels",
+        "Tekst":"Hva med å kombinere taco og burger i ett? Overrask barna med en saftig og smakfull burger laget på kjøttdeig av svin, tacokrydder og ost. Server med tomater, avokadomos en deilig maiskrem og topp med tortillachips. Dette vil hele familien elske. ",
         "Ingredienser":"kanskje noe her",
         "Innstruks":"blablabla",
-        "Bilde":"Bilder/blablabla.jpg ",
-        "Bilde2":"Bilder/blablabla.jpg"
+        "Bilde":"Bilder/TB.jpg ",
+        "Bilde2":"Bilder/TBStor.jpg"
       }
     }
   }

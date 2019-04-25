@@ -106,21 +106,27 @@
         <div class="slideshow-container">
 
           <div class="mySlides2 fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="Bilder/Pasta.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
+            <div class="numbertext">1 / 4</div>
+            <img src="Bilder/ErmU.jpg" style="width:100%">
+            <div class="text">Eggerøre</div>
           </div>
 
           <div class="mySlides2 fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="Bilder/Pasta.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
+            <div class="numbertext">2 / 4</div>
+            <img src="Bilder/SmSoCC.jpg" style="width:100%">
+            <div class="text">Sandwich</div>
           </div>
 
           <div class="mySlides2 fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="Bilder/Pasta.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <div class="numbertext">3 / 4</div>
+            <img src="Bilder/BEiTS.jpg" style="width:100%">
+            <div class="text">Bakt Egg</div>
+          </div>
+
+          <div class="mySlides2 fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="Bilder/CmF.jpg" style="width:100%">
+            <div class="text">Crêpes</div>
           </div>
 
           <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
@@ -133,26 +139,33 @@
             <span class="dot2" onclick="currentSlide2(1)"></span>
             <span class="dot2" onclick="currentSlide2(2)"></span>
             <span class="dot2" onclick="currentSlide2(3)"></span>
+            <span class="dot2" onclick="currentSlide2(4)"></span>
           </div>
       </div>
       <div class="span2">
         <div class="slideshow-container">
           <div class="mySlides3 fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="Bilder/Pasta.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
+            <div class="numbertext">1 / 4</div>
+            <img src="Bilder/KbmTS.jpg" style="width:100%">
+            <div class="text">Kjøttboller</div>
           </div>
 
           <div class="mySlides3 fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="Bilder/Pasta.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
+            <div class="numbertext">2 / 4</div>
+            <img src="Bilder/MT.jpg" style="width:100%">
+            <div class="text">Minitacos</div>
           </div>
 
           <div class="mySlides3 fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="Bilder/Pasta.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <div class="numbertext">3 / 4</div>
+            <img src="Bilder/Mbmkp.jpg" style="width:100%">
+            <div class="text">Minuttbiff</div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="Bilder/TB.jpg" style="width:100%">
+            <div class="text">Tacoburger</div>
           </div>
 
           <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
@@ -165,6 +178,7 @@
             <span class="dot3" onclick="currentSlide3(1)"></span>
             <span class="dot3" onclick="currentSlide3(2)"></span>
             <span class="dot3" onclick="currentSlide3(3)"></span>
+            <span class="dot3" onclick="currentSlide3(4)"></span>
           </div>
         </div>
         <div class="">
@@ -349,9 +363,23 @@
                  </div>
                 `;
               }
+              function visRetter(){
+                matforslag.innerHTML = ``
+                frokost.on("child_added",genererHTML);
+                lunsj.on("child_added",genererHTML);
+                middag.on("child_added",genererHTML);
+              }
               function visFrokost(){
                 matforslag.innerHTML = ``
                 frokost.on("child_added",genererHTML);
+              }
+              function visLunsj(){
+                matforslag.innerHTML = ``
+                lunsj.on("child_added",genererHTML);
+              }
+              function visMiddag(){
+                matforslag.innerHTML = ``
+                middag.on("child_added",genererHTML);
               }
                 </script>
   </body>
