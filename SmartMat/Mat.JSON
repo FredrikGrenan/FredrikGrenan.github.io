@@ -609,5 +609,133 @@
         }
       }
     }
+  },
+  "Oppskrifter":{
+    "Frokost":{
+      "GHS":{
+        "Overskrift":"Grove Havrescones",
+        "Tid":"20-40",
+        "Bemerkning":"Middels",
+        "Tekst":"Scones lages med bakepulver som hevemiddel, og er derfor raskt å lage. Grove scones passer til frokost, lunsj, som kuvertbrød eller som tilbehør til koldtbordet. ",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"1. gjør noe 2. gjør noe 3. gjør noe",
+        "Bilde":"Bilder/GHS.jpg ",
+        "Bilde2":"Bilder/GHSStor.jpg"
+      },
+      "KGmK":{
+        "Overskrift":"Kjøleskapsgrøt med Kokos",
+        "Tid":"60",
+        "Bemerkning":"Enkel",
+        "Tekst":"En herlig start på dagen; kjølskapsgrøt med kokos og blåbær. Det beste er at grøten nærmest lager seg selv, over natten.",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/KGmK.jpg",
+        "Bilde2":"Bilder/KGmKStor.jpg"
+      },
+      "MCmAM":{
+        "Overskrift":"Minicroissanter med Appelsinmarmelade",
+        "Tid":"20-40",
+        "Bemerkning":"Middels",
+        "Tekst":"Disse små søte minicroissantene smaker himmelsk sammen med appelsinmarmelade. En søt avslutning på et måltid, som kaffegodt eller som eksklusiv frokost når det er det som kreves. ",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/MCmAM.jpg",
+        "Bilde2":"Bilder/MCmAMStor.jpg"
+      },
+      "SPK":{
+        "Overskrift":"Sunne Pannekaker",
+        "Tid":"Under 20",
+        "Bemerkning":"Lett",
+        "Tekst":"Pannekaker kan også være en sunn frokost som gir en god start på dagen. Denne røra går raskt å lage, og med banan i røra får du en søt smak uten å bruke sukker. Server med cottage cheese og friske bjørnebær.",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/SPK.jpg",
+        "Bilde2":"Bilder/SPKStor.jpg"
+      }
+    },
+    "Lunsj":{
+      "ErmU":{
+        "Overskrift":"Eggerøre med Urter",
+        "Tid":"Under 20",
+        "Bemerkning":"Enkel",
+        "Tekst":"Eggerøre kan varieres i det uendelige. Denne oppskriften er med urter, og du kan bruke de urtene du ønsker eller har tilgjengelig.",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/ErmU.jpg ",
+        "Bilde2":"Bilder/ErmUStor.jpg"
+      },
+      "SmSoCC":{
+        "Overskrift":"Sandwich med Skinke og Cottage Cheese",
+        "Tid":"20",
+        "Bemerkning":"Enkel",
+        "Tekst":"Lei den vanlige skiva med gulost? Prøv denne spennende skinkesandwichen med cottage cheese! Lag hjemmelagde knekkebrød eller kjøp noen med masse deilige frø på butikken. Sunt og godt!",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/SmSoCC.jpg ",
+        "Bilde2":"Bilder/SmSoCCStor.jpg"
+      },
+      "BEiTS":{
+        "Overskrift":"Bakt Egg i Tomatsaus",
+        "Tid":"10",
+        "Bemerkning":"Rask",
+        "Tekst":"En rest av tomatsaus sammen med egg kan bli en smakfull middagsrett. Raskt og veldig godt!",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/BEiTS.jpg ",
+        "Bilde2":"Bilder/BEiTSStor.jpg"
+      },
+      "CmF":{
+        "Overskrift":"Crêpes med fenalår, ramsløk og snøfrisk",
+        "Tid":"60",
+        "Bemerkning":"Middels",
+        "Tekst":"Løvtynne pannekaker med søtt eller salt fyll er klassisk gatemat i Frankrike, og selges fra crêperies eller små vogner på annethvert gatehjørne. Vi har tatt crêpen hjem, og serverer en variant med tynne, tynne skiver norsk fenalår, ramsløk og Snøfrisk. C’est bon! (Il a bon goût)",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/CmF.jpg ",
+        "Bilde2":"Bilder/CmFStor.jpg"
+      }
+    },
+    "Middag":{
+      "Nokkel6":{
+        "Overskrift":"blablabla",
+        "Tid":"Tall",
+        "Bemerkning":"blablabla",
+        "Tekst":"blablabla",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/blablabla.jpg ",
+        "Bilde2":"Bilder/blablabla.jpg"
+      },
+      "Nokkel6":{
+        "Overskrift":"blablabla",
+        "Tid":"Tall",
+        "Bemerkning":"blablabla",
+        "Tekst":"blablabla",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/blablabla.jpg ",
+        "Bilde2":"Bilder/blablabla.jpg"
+      },
+      "Nokkel6":{
+        "Overskrift":"blablabla",
+        "Tid":"Tall",
+        "Bemerkning":"blablabla",
+        "Tekst":"blablabla",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/blablabla.jpg ",
+        "Bilde2":"Bilder/blablabla.jpg"
+      },
+      "Nokkel6":{
+        "Overskrift":"blablabla",
+        "Tid":"Tall",
+        "Bemerkning":"blablabla",
+        "Tekst":"blablabla",
+        "Ingredienser":"kanskje noe her",
+        "Innstruks":"blablabla",
+        "Bilde":"Bilder/blablabla.jpg ",
+        "Bilde2":"Bilder/blablabla.jpg"
+      }
+    }
   }
 }

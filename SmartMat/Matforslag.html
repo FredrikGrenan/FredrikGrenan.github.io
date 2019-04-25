@@ -66,21 +66,27 @@
           <div class="slideshow-container">
 
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="Bilder/Pasta.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
+              <div class="numbertext">1 / 4</div>
+              <img src="Bilder/GHS.jpg" style="width:100%">
+              <div class="text">Scones</div>
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="Bilder/Pasta.jpg" style="width:100%">
-              <div class="text">Caption Two</div>
+              <div class="numbertext">2 / 4</div>
+              <img src="Bilder/KGmK.jpg" style="width:100%">
+              <div class="text">Grøt</div>
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="Bilder/Pasta.jpg" style="width:100%">
-              <div class="text">Caption Three</div>
+              <div class="numbertext">3 / 4</div>
+              <img src="Bilder/MCmAM.jpg" style="width:100%">
+              <div class="text">Croissanter</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="Bilder/SPK.jpg" style="width:100%">
+              <div class="text">Pannekaker</div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -93,6 +99,7 @@
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
               <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
       <div class="span2">
@@ -173,55 +180,14 @@
         </div>
         <div>
           <p class="margin0">Rettene vi foreslår her er laget av noen av Norges beste kokker. På kjøkkenet vårt står Eivind Hellstrøm, Ola Nordmann og Kari Nordmann, samt flere mesterkokker med flere medaljer i både nasjonale og internasjonale konkuranser. Sammen har de laget mat som er næringsrik, god og samtidig klart å holde prisen lav for å la deg kunne ta de beste valgene når du skal lage mat til deg selv eller andre.</p>
-          <p class="margin0">Frokostene våre er raske å lage og gir deg en god start på dagen ved å dekke behovene du har tidlig om morgningen</p>
+          <p class="margin0">Frokostene våre er raske å lage og gir deg en god start på dagen ved å dekke behovene du har tidlig om morgningen. Lunsjene våre gir deg et høydepunkt på jobben, skolen eller  i barnehagen. Til slutt har vi 4 middagsretter, de er enkle å lage slik at alle i familien kan delta, og den fyller alle opp til å kunne gjenommeføre treninger eller lekser på kvelstiden</p>
         </div>
       </section>
       <p>Kokker</p>
       <p>Frokost</p>
-      <section class="grid-2 flm">
-        <div class="">
-          <p>Frokost nummer 1</p>
-        </div>
-        <div class="">
-          <p>Frokost nummer 2</p>
-        </div>
-        <div class="">
-          <p>Frokost nummer 3</p>
-        </div>
-        <div class="">
-          <p>Frokost nummer 4</p>
-        </div>
-      </section>
-      <p>Lunsj</p>
-      <section class="grid-2 flm">
-        <div class="">
-          <p>Lunsj nummer 1</p>
-        </div>
-        <div class="">
-          <p>Lunsj nummer 2</p>
-        </div>
-        <div class="">
-          <p>Lunsj nummer 3</p>
-        </div>
-        <div class="">
-          <p>Lunsj nummer 4</p>
-        </div>
-      </section>
-      <p>Middag</p>
-      <section class="grid-2 flm">
-        <div class="">
-          <p>Middag nummer 1</p>
-        </div>
-        <div class="">
-          <p>Middag nummer 2</p>
-        </div>
-        <div class="">
-          <p>Middag nummer 3</p>
-        </div>
-        <div class="">
-          <p>Middag nummer 4</p>
-        </div>
-      </section>
+      <div class="Matforslag grid-2">
+
+      </div>
     </main>
     <footer></footer>
     <script>
@@ -276,10 +242,10 @@
             slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+            dots[i].className = dots[i].className.replace(" active2", "");
         }
         slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        dots[slideIndex-1].className += " active2";
       }
       var slideIndex = 1;
       showSlides2(slideIndex);
@@ -302,10 +268,10 @@
             slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+            dots[i].className = dots[i].className.replace(" active2", "");
         }
         slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        dots[slideIndex-1].className += " active2";
       }
       var slideIndex = 1;
       showSlides3(slideIndex);
@@ -328,13 +294,65 @@
             slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+            dots[i].className = dots[i].className.replace(" active2", "");
         }
         slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        dots[slideIndex-1].className += " active2";
       }
       </script>
+      <script type="text/javascript">
+        const matforslag = document.querySelector(".Matforslag")
+        const db = firebase.database();
+        const frokost = db.ref("Oppskrifter/Frokost")
+        const lunsj = db.ref("Oppskrifter/Lunsj")
+        const middag = db.ref("Oppskrifter/Middag")
 
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var id = url.searchParams.get("id");
 
+        if(id == "alleRetter"){
+          visRetter();
+        }
+        if(id == "frokost"){
+          visFrokost();
+        }
+        if(id == "lunsj"){
+          visLunsj();
+        }
+        if(id == "middag"){
+          visMiddag();
+        }
+          /*Mulig noe skal inn her? */
+
+        function genererHTML(snapshot){
+          let mat = snapshot.val();
+          let key = snapshot.key;
+          let parent = snapshot.ref.parent.key;
+
+            let ref = parent + "/" + key;
+            matforslag.innerHTML +=`
+                <div class="">
+                  <div class="mat">
+                   <a href="Oppskrifter.html?id=${ref}">
+
+                     <img src="${mat.Bilde}" alt="Bilde ikke funnet">
+
+                     <h1>${mat.Overskrift}</h1>
+                   </a>
+                   <div class="vareInfo" >
+                     <p>Tid: ${mat.Tid}</p>
+                     <p>Vannskelighetsgrad: ${mat.Bemerkning}</p>
+                     <p>${mat.Tekst}</p>
+                     </div>
+                   </div>
+                 </div>
+                `;
+              }
+              function visFrokost(){
+                matforslag.innerHTML = ``
+                frokost.on("child_added",genererHTML);
+              }
+                </script>
   </body>
 </html>
