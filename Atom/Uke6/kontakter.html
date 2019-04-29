@@ -1,57 +1,83 @@
 <!DOCTYPE html>
-<html lang="nb" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
-    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyD2JkQPkRxUjbPbMwukoXSKHAxf7AP3cJE",
-        authDomain: "kontakter-4760b.firebaseapp.com",
-        databaseURL: "https://kontakter-4760b.firebaseio.com",
-        projectId: "kontakter-4760b",
-        storageBucket: "kontakter-4760b.appspot.com",
-        messagingSenderId: "1021855736516"
-      };
-      firebase.initializeApp(config);
-    </script>
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
 
-  </head>
-  <body>
-    <script type="text/javascript">
-      const db = firebase.database();
-      const bloggere = db.ref("bloggere");
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-      bloggere.push({
-        "Navn":"Sophie Elise",
-        "Følgere":59000,
-        "Alder":23
-      });
-      bloggere.push("Pappahjerte");
-      bloggere.push("Annijor");
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-      const BillGates = bloggere.child(90440000);
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-      BillGates.set({
-        "Navn":"Bill Gates",
-        "epost":"Bill@microsoft.com"
-      });
-
-      const SteveJobs = bloggere.child(90440000)
-      SteveJobs.set({
-        "navn":"Steve Jobs",
-        "epost":"Steve@apple.com"
-      })
-      SteveJobs.update({
-        "navn":"Jeff Bezos"
-      });
+.dropdown a:hover {background-color: #ddd;}
 
 
+</style>
+</head>
+<body>
 
+<h2>Clickable Dropdown</h2>
+<p>Click on the button to open the dropdown menu.</p>
 
-      //bloggere.remove();
-    </script>
-  </body>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
 </html>

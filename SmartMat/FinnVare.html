@@ -71,7 +71,7 @@
           <button class="MatKnapp" onclick="visSøtpålegg()">Søtpålegg</button>
         </div> -->
         <div class="dropdownmat">
-          <button onclick="dropdownmat()" class="dropbtnMat">Alle</button>
+          <button onclick="kategoriknapp()" class="dropbtnMat">Alle</button>
           <div id="mydropdownmat" class="dropdown-contentMat">
             <a href="#" onclick="visAlle()">Alle</a>
             <a href="#" onclick="alleBillig()">Minst Pris</a>
@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="dropdownmat2">
-          <button onclick="dropdownmat2()" class="dropbtnMat2">Brød</button>
+          <button onclick="kategoriknapp2()" class="dropbtnMat2">Brød</button>
           <div id="mydropdownmat2" class="dropdown-contentMat2">
             <a href="#" onclick="visBrød()">Alle</a>
             <a href="#" onclick="billigBrød()">Minst Pris</a>
@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="dropdownmat3">
-          <button onclick="dropdownmat3()" class="dropbtnMat3">Melk</button>
+          <button onclick="kategoriknapp3()" class="dropbtnMat3">Melk</button>
           <div id="mydropdownmat3" class="dropdown-contentMat3">
             <a href="#" onclick="visMelk()">Alle</a>
             <a href="#" onclick="billigMelk()">Minst Pris</a>
@@ -98,7 +98,7 @@
           </div>
         </div>
       <div class="dropdownmat4">
-        <button onclick="dropdownmat4()" class="dropbtnMat4">Brus</button>
+        <button onclick="kategoriknapp4()" class="dropbtnMat4">Brus</button>
         <div id="mydropdownmat4" class="dropdown-contentMat4">
           <a href="#" onclick="visBrus()">Alle</a>
           <a href="#" onclick="billigBrus()">Minst Pris</a>
@@ -107,10 +107,10 @@
         </div>
       </div>
       <div class="dropdownmat5">
-        <button onclick="dropdownmat5()" class="dropbtnMat5">Pålegg</button>
+        <button onclick="kategoriknapp5()" class="dropbtnMat5">Pålegg</button>
         <div id="mydropdownmat5" class="dropdown-contentMat5">
           <div class="dropdownmat6">
-            <button onclick="dropdownmat6()" class="dropbtnMat6">Kylling og Kjøttpålegg</button>
+            <button onclick="kategoriknapp6()" class="dropbtnMat6">Kylling og Kjøttpålegg</button>
             <div id="mydropdownmat6" class="dropdown-contentMat6">
               <a href="#" onclick="viskkpålegg">Alle</a>
               <a href="#" onclick="billigKkpålegg()">Minst Pris</a>
@@ -119,7 +119,7 @@
             </div>
           </div>
           <div class="dropdownmat7">
-            <button onclick="dropdownmat7()" class="dropbtnMat7">Fiskepålegg</button>
+            <button onclick="kategoriknapp7()" class="dropbtnMat7">Fiskepålegg</button>
             <div id="mydropdownmat7" class="dropdown-contentMat7">
               <a href="#" onclick="visfpålegg">Alle</a>
               <a href="#" onclick="billigFiskepålegg()">Minst Pris</a>
@@ -128,7 +128,7 @@
             </div>
           </div>
           <div class="dropdownmat8">
-            <button onclick="dropdownmat8()" class="dropbtnMat8">Søtpålegg</button>
+            <button onclick="kategoriknapp8()" class="dropbtnMat8">Søtpålegg</button>
             <div id="mydropdownmat8" class="dropdown-contentMat8">
               <a href="#" onclick="visSøtpålegg">Alle</a>
               <a href="#" onclick="billigSøtpålegg()">Minst Pris</a>
@@ -376,26 +376,28 @@
 
     </script>
     <script>
-    /* When the user clicks on the button,
-    toggle between hiding and showing the dropdown content */
-    function dropdownmat() {
-      document.getElementById("mydropdownmat").classList.toggle("showMat");
-    }
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function kategoriknapp() {
+    document.getElementById("mydropdownmat").classList.toggle("showMat");
+  }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtnMat')) {
-        var dropdowns = document.getElementsByClassName("dropdown-contentMat");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('showMat')) {
-            openDropdown.classList.remove('showMat');
-          }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtnMat')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contentMat");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showMat')) {
+          openDropdown.classList.remove('showMat');
         }
       }
     }
-    function dropdownmat2() {
+  }
+  </script>
+  <script type="text/javascript">
+    function kategoriknapp2() {
       document.getElementById("mydropdownmat2").classList.toggle("showMat");
     }
 
@@ -412,113 +414,125 @@
         }
       }
     }
-    function dropdownmat3() {
-      document.getElementById("mydropdownmat3").classList.toggle("showMat");
-    }
+</script>
+<script>
+  function kategoriknapp3() {
+    document.getElementById("mydropdownmat3").classList.toggle("showMat");
+  }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtnMat3')) {
-        var dropdowns = document.getElementsByClassName("dropdown-contentMat3");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('showMat')) {
-            openDropdown.classList.remove('showMat');
-          }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtnMat3')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contentMat3");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showMat')) {
+          openDropdown.classList.remove('showMat');
         }
       }
     }
-    function dropdownmat4() {
-      document.getElementById("mydropdownmat4").classList.toggle("showMat");
-    }
+  }
+</script>
+<script type="text/javascript">
+  function kategoriknapp4() {
+    document.getElementById("mydropdownmat4").classList.toggle("showMat");
+  }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtnMat4')) {
-        var dropdowns = document.getElementsByClassName("dropdown-contentMat4");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('showMat')) {
-            openDropdown.classList.remove('showMat');
-          }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtnMat4')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contentMat4");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showMat')) {
+          openDropdown.classList.remove('showMat');
         }
       }
     }
-    function dropdownmat5() {
-      document.getElementById("mydropdownmat5").classList.toggle("showMat");
-    }
+  }
+</script>
+<script type="text/javascript">
+  function kategoriknapp5() {
+    document.getElementById("mydropdownmat5").classList.toggle("showMat");
+  }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtnMat5')) {
-        var dropdowns = document.getElementsByClassName("dropdown-contentMat5");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('showMat')) {
-            openDropdown.classList.remove('showMat');
-          }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtnMat5')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contentMat5");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showMat')) {
+          openDropdown.classList.remove('showMat');
         }
       }
     }
-    function dropdownmat6() {
-      document.getElementById("mydropdownmat6").classList.toggle("showMat");
-    }
+  }
+</script>
+<script type="text/javascript">
+  function kategoriknapp6() {
+    document.getElementById("mydropdownmat6").classList.toggle("showMat");
+  }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtnMat6')) {
-        var dropdowns = document.getElementsByClassName("dropdown-contentMat6");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('showMat')) {
-            openDropdown.classList.remove('showMat');
-          }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtnMat6')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contentMat6");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showMat')) {
+          openDropdown.classList.remove('showMat');
         }
       }
     }
-    function dropdownmat7() {
-      document.getElementById("mydropdownmat7").classList.toggle("showMat");
-    }
+  }
+</script>
+<script type="text/javascript">
+  function kategoriknapp7() {
+    document.getElementById("mydropdownmat7").classList.toggle("showMat");
+  }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtnMat7')) {
-        var dropdowns = document.getElementsByClassName("dropdown-contentMat7");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('showMat')) {
-            openDropdown.classList.remove('showMat');
-          }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtnMat7')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contentMat7");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showMat')) {
+          openDropdown.classList.remove('showMat');
         }
       }
     }
-    function dropdownmat8() {
-      document.getElementById("mydropdownmat8").classList.toggle("show");
-    }
+  }
+</script>
+<script>
+  function kategoriknapp8() {
+    document.getElementById("mydropdownmat8").classList.toggle("show");
+  }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtnMat8')) {
-        var dropdowns = document.getElementsByClassName("dropdown-contentMat8");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('showMat')) {
-            openDropdown.classList.remove('showMat');
-          }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtnMat8')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contentMat8");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showMat')) {
+          openDropdown.classList.remove('showMat');
         }
       }
     }
-    </script>
+  }
+</script>
     <script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function dropdownmat() {
+function kategoriknapp() {
   document.getElementById("mydropdownmat").classList.toggle("showMat");
 }
 

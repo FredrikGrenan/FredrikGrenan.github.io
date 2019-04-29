@@ -196,10 +196,6 @@ h1{
   padding-top: 20px;
   padding-left: 20px;
 }
-@media screen and (max-width: 800px) {
-  #IndexMatforslag{
-    grid-template-columns: 1fr;
-  }
   footer{
     width: 100%;
   }
@@ -523,3 +519,13 @@ img {vertical-align: middle;}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .showMat {display:block;}
+
+
+@media screen and (max-width: 800px) {
+  #IndexMatforslag{
+    grid-template-columns: 1fr;
+  }
+  #Logo{
+    padding: 0px;
+    width: 100%;
+  }
