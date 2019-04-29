@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="Stilark.css">
+    <link rel="icon" type="image" href="Bilder/icon.JPG" />
 
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 <script>
@@ -32,20 +33,21 @@
             <div class="dropdown-container">
               <a href="FinnVare.html?id=alle"><i class="fas fa-store-alt"></i> Alle</a>
               <a href="FinnVare.html?id=brød"><i class="fas fa-bread-slice"></i> Brød</a>
-              <a href="#"><i class="fas fa-glass-whiskey"></i></i> Melk</a>
-              <a href="#"><i class="fas fa-glass-martini-alt"></i> Brus</a>
+              <a href="FinnVare.html?id=melk"><i class="fas fa-glass-whiskey"></i></i> Melk</a>
+              <a href="FinnVare.html?id=brus"><i class="fas fa-glass-martini-alt"></i> Brus</a>
               <button class="dropdown-btn"><i class="fas fa-globe"></i> Pålegg <i class="fas fa-chevron-down"></i></button>
                 <div class="dropdown-container">
-                  <a href="#"><i class="fas fa-drumstick-bite"></i> Kjøtt og Kyllingpålegg</a>
-                  <a href="#"><i class="fas fa-fish"></i> Fiskepålegg</a>
-                  <a href="#"><i class="fas fa-candy-cane"></i> Søtpålegg</a>
+                  <a href="FinnVare.html?id=Paalegg/KyllingogKjottpaalegg"><i class="fas fa-drumstick-bite"></i> Kjøtt og Kyllingpålegg</a>
+                  <a href="FinnVare.html?id=Paalegg/Fiskepaalegg"><i class="fas fa-fish"></i> Fiskepålegg</a>
+                  <a href="FinnVare.html?id=Paalegg/Sotpaalegg"><i class="fas fa-candy-cane"></i> Søtpålegg</a>
                 </div>
             </div>
           <button class="dropdown-btn"><i class="fas fa-dice-six"></i> Matforslag <i class="fas fa-chevron-down"></i></button>
             <div class="dropdown-container">
-              <a href="Matforslag.html">   <i class="fas fa-coffee"></i> Frokost</a>
-              <a href="Matforslag.html">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
-              <a href="Matforslag.html">   <i class="fas fa-utensils"></i> Middag</a>
+              <a href="Matforslag.html?id=alleRetter">   <i class="fas fa-utensils"></i> Alle</a>
+              <a href="Matforslag.html?id=frokost">   <i class="fas fa-coffee"></i> Frokost</a>
+              <a href="Matforslag.html?id=lunsj">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
+              <a href="Matforslag.html?id=middag">   <i class="fas fa-utensils"></i> Middag</a>
             </div>
         </ul>
       </div>
@@ -91,5 +93,44 @@
     }
 
     </script>
+    <script type="text/javascript">
+      const main = document.querySelector("main");
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var id = url.searchParams.get("id");
+      const db = firebase.database();
+      const oppskrift = db.ref("Oppskrifter/" + id);
+      console.log("Oppskrifter/" + id);
+
+      function visOppskrift(snapshot){
+
+          let data = snapshot.val();
+
+          main.innerHTML +=`
+
+          <section class="">
+            <div class="containerOS">
+              <img class="Bilde2OS" src="${data.Bilde2}" alt="">
+              <div class="text-blockOS">
+                <h1 class="OSOS">${data.Overskrift}</h1>
+                <p class="margin0">__________________________________</p>
+                <div class="grid-2 VTmargin">
+                  <div>
+                    <p><i class="fas fa-certificate"></i>  ${data.Bemerkning}</p>
+                  </div>
+                  <div>
+                    <p><i class="far fa-clock"></i>  ${data.Tid}</p>
+                  </div>
+                </div>
+                <p>${data.Tekst}</p>
+
+              </div>
+            </div>
+            <p>${data.Innstruks}</p>
+          </section>
+          `;
+      }
+      oppskrift.on("value", visOppskrift)
+  </script>
   </body>
 </html>

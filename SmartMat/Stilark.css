@@ -33,8 +33,6 @@ section p{
 h1{
   padding-left: 15px;
 }
-
-}
 .active{
   background-color: green;
 }
@@ -214,15 +212,17 @@ h1{
   color: #f1f1f1;
   width: 100%;
 }
-.radiusmat{
-  border-radius: 15px;
-}
 .Bilde2{
   margin: 0 auto;
   display: block;
   width: auto;
   height: auto;
   max-height: 500px;
+  max-width: 500px;
+}
+.Bilde2OS{
+  width: 100%;
+  max-height: none;
 }
 .Kategoriliste{
   margin-left: 0px;
@@ -246,18 +246,26 @@ h1{
 .Kategoriliste .MatKnapp:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
 }
-.MatKnapp:hover {
+.MatKnapp:hover, .Handleknapp:hover, .block:hover{
   background-color: #3e8e41;
 }
-.vare a:link{
+.vare{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.VTmargin{
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.OSOS{
+  margin-bottom: 0px;
+}
+.MFB2{
+  width: 100%;
+}
+.vare a:link, .vare a:visited{
   text-decoration: none;
   color: black;
-}
-.vare a:visited{
-  color: black;
-}
-.vareInfo{
-
 }
 .matslide{
   grid-gap: 10px;
@@ -265,6 +273,7 @@ h1{
 .kokk{
   margin-left: 200px;
   margin-right: 200px;
+  text-align: center;
 }
 .kokk p{
   font-size: 20px;
@@ -367,11 +376,20 @@ img {vertical-align: middle;}
   text-decoration: none;
   color: black;
 }
+.mat{
+  padding: 10px;
+}
 .Matforslag{
   margin-left: 200px;
   margin-right: 200px;
 }
-
+.tykk{
+  font-weight: bold;
+}
+.liten{
+  color: darkgrey;
+  font-size: 10px;
+}
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -385,4 +403,66 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+.block {
+  display: block;
+  margin: auto;
+  width: 50%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 10px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+}
+.containerOS {
+  position: relative;
+}
+.enkelVareOS{
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0px;
+}
+.enkelVarePris{
+  color: #4CAF50;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.enkelVareProd, .enkelVareStorrelse{
+  color: grey;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.enkelVareKnapp{
+  display: grid;
+  grid-template-columns:1fr 4fr;
+}
+.Handleknapp{
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border: 1px solid green;
+  font-size: 16px;
+  width: 250px;
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* Bottom right text */
+.text-blockOS {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 300px;
+  text-align: center;
 }

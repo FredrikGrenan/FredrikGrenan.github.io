@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="Stilark.css">
+    <link rel="icon" type="image" href="Bilder/icon.JPG" />
 
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 <script>
@@ -32,20 +33,21 @@
             <div class="dropdown-container">
               <a href="FinnVare.html?id=alle"><i class="fas fa-store-alt"></i> Alle</a>
               <a href="FinnVare.html?id=brød"><i class="fas fa-bread-slice"></i> Brød</a>
-              <a href="#"><i class="fas fa-glass-whiskey"></i></i> Melk</a>
-              <a href="#"><i class="fas fa-glass-martini-alt"></i> Brus</a>
+              <a href="FinnVare.html?id=melk"><i class="fas fa-glass-whiskey"></i></i> Melk</a>
+              <a href="FinnVare.html?id=brus"><i class="fas fa-glass-martini-alt"></i> Brus</a>
               <button class="dropdown-btn"><i class="fas fa-globe"></i> Pålegg <i class="fas fa-chevron-down"></i></button>
                 <div class="dropdown-container">
-                  <a href="#"><i class="fas fa-drumstick-bite"></i> Kjøtt og Kyllingpålegg</a>
-                  <a href="#"><i class="fas fa-fish"></i> Fiskepålegg</a>
-                  <a href="#"><i class="fas fa-candy-cane"></i> Søtpålegg</a>
+                  <a href="FinnVare.html?id=Paalegg/KyllingogKjottpaalegg"><i class="fas fa-drumstick-bite"></i> Kjøtt og Kyllingpålegg</a>
+                  <a href="FinnVare.html?id=Paalegg/Fiskepaalegg"><i class="fas fa-fish"></i> Fiskepålegg</a>
+                  <a href="FinnVare.html?id=Paalegg/Sotpaalegg"><i class="fas fa-candy-cane"></i> Søtpålegg</a>
                 </div>
             </div>
           <button class="dropdown-btn"><i class="fas fa-dice-six"></i> Matforslag <i class="fas fa-chevron-down"></i></button>
             <div class="dropdown-container">
-              <a href="Matforslag.html">   <i class="fas fa-coffee"></i> Frokost</a>
-              <a href="Matforslag.html">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
-              <a href="Matforslag.html">   <i class="fas fa-utensils"></i> Middag</a>
+              <a href="Matforslag.html?id=alleRetter">   <i class="fas fa-utensils"></i> Alle</a>
+              <a href="Matforslag.html?id=frokost">   <i class="fas fa-coffee"></i> Frokost</a>
+              <a href="Matforslag.html?id=lunsj">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
+              <a href="Matforslag.html?id=middag">   <i class="fas fa-utensils"></i> Middag</a>
             </div>
         </ul>
       </div>
@@ -197,8 +199,6 @@
           <p class="margin0">Frokostene våre er raske å lage og gir deg en god start på dagen ved å dekke behovene du har tidlig om morgningen. Lunsjene våre gir deg et høydepunkt på jobben, skolen eller  i barnehagen. Til slutt har vi 4 middagsretter, de er enkle å lage slik at alle i familien kan delta, og den fyller alle opp til å kunne gjenommeføre treninger eller lekser på kvelstiden</p>
         </div>
       </section>
-      <p>Kokker</p>
-      <p>Frokost</p>
       <div class="Matforslag grid-2">
 
       </div>
@@ -350,14 +350,20 @@
                   <div class="mat">
                    <a href="Oppskrifter.html?id=${ref}">
 
-                     <img src="${mat.Bilde}" alt="Bilde ikke funnet">
+                     <img class="MFB2" src="${mat.Bilde2}" alt="Bilde ikke funnet">
 
                      <h1>${mat.Overskrift}</h1>
                    </a>
                    <div class="vareInfo" >
-                     <p>Tid: ${mat.Tid}</p>
-                     <p>Vannskelighetsgrad: ${mat.Bemerkning}</p>
-                     <p>${mat.Tekst}</p>
+                   <div class="grid-2 VTmargin">
+                    <div>
+                     <p><i class="fas fa-certificate"></i>  ${mat.Bemerkning}</p>
+                   </div>
+                    <div>
+                      <p><i class="far fa-clock"></i>  ${mat.Tid}</p>
+                     </div>
+                   </div>
+                   <p>${mat.Tekst}</p>
                      </div>
                    </div>
                  </div>

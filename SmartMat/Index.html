@@ -2,10 +2,11 @@
 <html lang="nb" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>SmartMat</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="Stilark.css">
+    <link rel="icon" type="image" href="Bilder/icon.JPG" />
 
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 <script>
@@ -45,8 +46,8 @@
             <div class="dropdown-container">
               <a href="Matforslag.html?id=alleRetter">   <i class="fas fa-utensils"></i> Alle</a>
               <a href="Matforslag.html?id=frokost">   <i class="fas fa-coffee"></i> Frokost</a>
-              <a href="Matforslag.html">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
-              <a href="Matforslag.html">   <i class="fas fa-utensils"></i> Middag</a>
+              <a href="Matforslag.html?id=lunsj">   <i class="fas fa-cookie-bite"></i> Lunsj</a>
+              <a href="Matforslag.html?id=middag">   <i class="fas fa-utensils"></i> Middag</a>
             </div>
         </ul>
       </div>
@@ -66,66 +67,38 @@
 
         </div>
         <section class="span3">
-
-          <div class="container radiusmat">
-            <img src="Bilder/Havregrøt.jpg" alt="Havregrøt" style="width:100%;">
-            <div class="content">
-              <h1>Frokost</h1>
-              <p>En god frokost påvirker energien og humøret ditt gjennom hele dagen. trykk her for 4 forlsag til en superbra frokost!</p>
+          <a href="Matforslag.html?id=frokost">
+            <div class="container">
+              <img src="Bilder/Havregrøt.jpg" alt="Havregrøt" style="width:100%;">
+              <div class="content">
+                <h1>Frokost</h1>
+                <p>En god frokost påvirker energien og humøret ditt gjennom hele dagen. trykk her for 4 forlsag til en superbra frokost!</p>
+              </div>
             </div>
-          </div>
-
+          </a>
         </section>
-        <section class="span3 radiusmat">
-
-          <div class="container">
-            <img src="Bilder/Pannekaker.webp" alt="Havregrøt" style="width:100%;">
-            <div class="content">
-              <h1>Lunsj</h1>
-              <p>Lunsj kan være frukt, brødskiver, småbakst eller annet. Her har vi laget 4 enkle retter som du kommer til å elske!</p>
+        <section class="span3">
+          <a href="Matforslag.html?id=lunsj">
+            <div class="container">
+              <img src="Bilder/Pannekaker.webp" alt="Havregrøt" style="width:100%;">
+              <div class="content">
+                <h1>Lunsj</h1>
+                <p>Lunsj kan være frukt, brødskiver, småbakst eller annet. Her har vi laget 4 enkle retter som du kommer til å elske!</p>
+              </div>
             </div>
-          </div>
-
+          </a>
         </section>
-        <section class="span3 radiusmat">
-
-          <div class="container">
-            <img src="Bilder/Pasta.jpg" alt="Havregrøt" style="width:100%;">
-            <div class="content">
-              <h1>Middag</h1>
-              <p>Dagens største måltid er middagen. her har vi 4 retter for deg og din familie med næringen som kroppen trenger!</p>
+        <section class="span3">
+          <a href="Matforslag.html?id=middag">
+            <div class="container">
+              <img src="Bilder/Pasta.jpg" alt="Havregrøt" style="width:100%;">
+              <div class="content">
+                <h1>Middag</h1>
+                <p>Dagens største måltid er middagen. her har vi 4 retter for deg og din familie med næringen som kroppen trenger!</p>
+              </div>
             </div>
-          </div>
-
+          </a>
         </section>
-
-
-        </div>
-        </section>
-
-      <h4>blablabla</h4>
-      <section class="grid-7">
-        <div class="">
-          <p>1</p>
-        </div>
-        <div class="">
-          <p>2</p>
-        </div>
-        <div class="">
-          <p>3</p>
-        </div>
-        <div class="">
-          <p>4</p>
-        </div>
-        <div class="">
-          <p>5</p>
-        </div>
-        <div class="">
-          <p>6</p>
-        </div>
-        <div class="">
-          <p>7</p>
-        </div>
       </section>
       <a href="FinnVare.html?id=alle"><img class="center responsive" src="Bilder/Handle3.jpg" alt="Trykk her for å starte handlingen"></a>
       </main>
@@ -166,10 +139,5 @@
     }
 
     </script>
-
-    <script type="text/javascript">
-
-    </script>
-
   </body>
 </html>
