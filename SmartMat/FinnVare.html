@@ -498,7 +498,7 @@
       }
     }
     function dropdownmat8() {
-      document.getElementById("mydropdownmat8").classList.toggle("showMat");
+      document.getElementById("mydropdownmat8").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -519,18 +519,18 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropdownmat() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("dropdownmat").classList.toggle("showMat");
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+  if (!event.target.matches('.dropbtnmat')) {
+    var dropdowns = document.getElementsByClassName("dropdown-contentmat");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      if (openDropdown.classList.contains('showMat')) {
+        openDropdown.classList.remove('showMat');
       }
     }
   }
