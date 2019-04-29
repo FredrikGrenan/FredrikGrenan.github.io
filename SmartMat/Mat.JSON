@@ -218,8 +218,8 @@
         "Allergier":["Sukkerfri"],
         "Storrelse":"1,5 Liter",
         "Produsent":"Ringnes",
-        "Bilde":"Bilder/1.5PmLime.jpg",
-        "Bilde2":"Bilder/1.5PmLimeStor.jpg"
+        "Bilde":"Bilder/1.5PmL.jpg",
+        "Bilde2":"Bilder/1.5PmLStor.jpg"
       },
       "10PakkLitenCola":{
         "Vare":"Coca Cola",

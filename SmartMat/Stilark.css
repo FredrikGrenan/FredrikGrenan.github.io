@@ -196,6 +196,14 @@ h1{
   padding-top: 20px;
   padding-left: 20px;
 }
+@media screen and (max-width: 800px) {
+  #IndexMatforslag{
+    grid-template-columns: 1fr;
+  }
+  footer{
+    width: 100%;
+  }
+}
 .container {
   position: relative;
   max-width: 800px;
