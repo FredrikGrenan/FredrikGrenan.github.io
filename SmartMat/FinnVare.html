@@ -71,8 +71,8 @@
           <button class="MatKnapp" onclick="visSøtpålegg()">Søtpålegg</button>
         </div> -->
         <div class="dropdownmat">
-          <button onclick="dropDownMat()" class="dropbtnMat">Alle</button>
-          <div id="myDropdownMat" class="dropdown-contentMat">
+          <button onclick="dropdownmat()" class="dropbtnMat">Alle</button>
+          <div id="mydropdownmat" class="dropdown-contentMat">
             <a href="#" onclick="visAlle()">Alle</a>
             <a href="#" onclick="alleBillig()">Minst Pris</a>
             <a href="#" onclick="alleAlfa()">Alfabetisk</a>
@@ -80,51 +80,57 @@
           </div>
         </div>
         <div class="dropdownmat2">
-          <button onclick="dropDownMat2()" class="dropbtnMat2">Brød</button>
-          <div id="myDropdownMat2" class="dropdown-contentMat2">
+          <button onclick="dropdownmat2()" class="dropbtnMat2">Brød</button>
+          <div id="mydropdownmat2" class="dropdown-contentMat2">
+            <a href="#" onclick="visBrød()">Alle</a>
             <a href="#" onclick="billigBrød()">Minst Pris</a>
             <a href="#" onclick="alfaBrød()">Alfabetisk</a>
             <a href="#" onclick="storrelseBrød()">Lettest</a>
           </div>
         </div>
         <div class="dropdownmat3">
-          <button onclick="dropDownMat3()" class="dropbtnMat3">Melk</button>
-          <div id="myDropdownMat3" class="dropdown-contentMat3">
+          <button onclick="dropdownmat3()" class="dropbtnMat3">Melk</button>
+          <div id="mydropdownmat3" class="dropdown-contentMat3">
+            <a href="#" onclick="visMelk()">Alle</a>
             <a href="#" onclick="billigMelk()">Minst Pris</a>
             <a href="#" onclick="alfaMelk()">Alfabetisk</a>
             <a href="#" onclick="storrelseMelk()">Lettest</a>
           </div>
         </div>
       <div class="dropdownmat4">
-        <button onclick="dropDownMat4()" class="dropbtnMat4">Brus</button>
-        <div id="myDropdownMat4" class="dropdown-contentMat4">
+        <button onclick="dropdownmat4()" class="dropbtnMat4">Brus</button>
+        <div id="mydropdownmat4" class="dropdown-contentMat4">
+          <a href="#" onclick="visBrus()">Alle</a>
           <a href="#" onclick="billigBrus()">Minst Pris</a>
           <a href="#" onclick="alfaBrus()">Alfabetisk</a>
           <a href="#" onclick="storrelseBrus()">Lettest</a>
         </div>
       </div>
       <div class="dropdownmat5">
-        <button onclick="dropDownMat5()" class="dropbtnMat5">Pålegg</button>
-        <div id="myDropdownMat5" class="dropdown-contentMat5">
+        <button onclick="dropdownmat5()" class="dropbtnMat5">Pålegg</button>
+        <div id="mydropdownmat5" class="dropdown-contentMat5">
           <div class="dropdownmat6">
-            <button onclick="dropDownMat6()" class="dropbtnMat6">Kylling og Kjøttpålegg</button>
-            <div id="myDropdownMat6" class="dropdown-contentMat6">
+            <button onclick="dropdownmat6()" class="dropbtnMat6">Kylling og Kjøttpålegg</button>
+            <div id="mydropdownmat6" class="dropdown-contentMat6">
+              <a href="#" onclick="viskkpålegg">Alle</a>
               <a href="#" onclick="billigKkpålegg()">Minst Pris</a>
               <a href="#" onclick="alfaKkpålegg()">Alfabetisk</a>
               <a href="#" onclick="storrelseKkpålegg()">Lettest</a>
             </div>
           </div>
           <div class="dropdownmat7">
-            <button onclick="dropDownMat7()" class="dropbtnMat7">Fiskepålegg</button>
-            <div id="myDropdownMat7" class="dropdown-contentMat7">
+            <button onclick="dropdownmat7()" class="dropbtnMat7">Fiskepålegg</button>
+            <div id="mydropdownmat7" class="dropdown-contentMat7">
+              <a href="#" onclick="visfpålegg">Alle</a>
               <a href="#" onclick="billigFiskepålegg()">Minst Pris</a>
               <a href="#" onclick="alfaFiskepålegg()">Alfabetisk</a>
               <a href="#" onclick="storrelseFiskepålegg()">Lettest</a>
             </div>
           </div>
           <div class="dropdownmat8">
-            <button onclick="dropDownMat8()" class="dropbtnMat8">Søtpålegg</button>
-            <div id="myDropdownMat8" class="dropdown-contentMat8">
+            <button onclick="dropdownmat8()" class="dropbtnMat8">Søtpålegg</button>
+            <div id="mydropdownmat8" class="dropdown-contentMat8">
+              <a href="#" onclick="visSøtpålegg">Alle</a>
               <a href="#" onclick="billigSøtpålegg()">Minst Pris</a>
               <a href="#" onclick="alfaSøtpålegg()">Alfabetisk</a>
               <a href="#" onclick="storrelseSøtpålegg()">Lettest</a>
@@ -229,7 +235,7 @@
         melk.orderByChild("Vare").on("child_added",genererHTML)
         brus.orderByChild("Vare").on("child_added",genererHTML)
         kkpålegg.orderByChild("Vare").on("child_added",genererHTML)
-        fiskepålegg.orderByChild("Vare").on("child_added",genererHTML)
+        fpålegg.orderByChild("Vare").on("child_added",genererHTML)
         søtpålegg.orderByChild("Vare").on("child_added",genererHTML)
       }
       function alleStorrelse() {
@@ -238,7 +244,7 @@
         melk.orderByChild("Storrelse").on("child_added",genererHTML)
         brus.orderByChild("Storrelse").on("child_added",genererHTML)
         kkpålegg.orderByChild("Storrelse").on("child_added",genererHTML)
-        fiskepålegg.orderByChild("Storrelse").on("child_added",genererHTML)
+        fpålegg.orderByChild("Storrelse").on("child_added",genererHTML)
         søtpålegg.orderByChild("Storrelse").on("child_added",genererHTML)
       }
       function visBrød(){
@@ -372,8 +378,8 @@
     <script>
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
-    function dropDownMat() {
-      document.getElementById("myDropdownMat").classList.toggle("showMat");
+    function dropdownmat() {
+      document.getElementById("mydropdownmat").classList.toggle("showMat");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -389,8 +395,8 @@
         }
       }
     }
-    function dropDownMat2() {
-      document.getElementById("myDropdownMat2").classList.toggle("showMat");
+    function dropdownmat2() {
+      document.getElementById("mydropdownmat2").classList.toggle("showMat");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -406,8 +412,8 @@
         }
       }
     }
-    function dropDownMat3() {
-      document.getElementById("myDropdownMat3").classList.toggle("showMat");
+    function dropdownmat3() {
+      document.getElementById("mydropdownmat3").classList.toggle("showMat");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -423,8 +429,8 @@
         }
       }
     }
-    function dropDownMat4() {
-      document.getElementById("myDropdownMat4").classList.toggle("showMat");
+    function dropdownmat4() {
+      document.getElementById("mydropdownmat4").classList.toggle("showMat");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -440,8 +446,8 @@
         }
       }
     }
-    function dropDownMat5() {
-      document.getElementById("myDropdownMat5").classList.toggle("showMat");
+    function dropdownmat5() {
+      document.getElementById("mydropdownmat5").classList.toggle("showMat");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -457,8 +463,8 @@
         }
       }
     }
-    function dropDownMat6() {
-      document.getElementById("myDropdownMat6").classList.toggle("showMat");
+    function dropdownmat6() {
+      document.getElementById("mydropdownmat6").classList.toggle("showMat");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -474,8 +480,8 @@
         }
       }
     }
-    function dropDownMat7() {
-      document.getElementById("myDropdownMat7").classList.toggle("showMat");
+    function dropdownmat7() {
+      document.getElementById("mydropdownmat7").classList.toggle("showMat");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -491,8 +497,8 @@
         }
       }
     }
-    function dropDownMat8() {
-      document.getElementById("myDropdownMat8").classList.toggle("showMat");
+    function dropdownmat8() {
+      document.getElementById("mydropdownmat8").classList.toggle("showMat");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -509,5 +515,26 @@
       }
     }
     </script>
+    <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function dropdownmat() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
   </body>
 </html>
