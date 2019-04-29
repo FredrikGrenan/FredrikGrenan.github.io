@@ -70,8 +70,69 @@
           <button class="MatKnapp" onclick="visfpålegg()">Fiskepålegg</button>
           <button class="MatKnapp" onclick="visSøtpålegg()">Søtpålegg</button>
         </div> -->
-
+        <div class="dropdownmat">
+          <button onclick="dropDownMat()" class="dropbtnMat">Alle</button>
+          <div id="myDropdownMat" class="dropdown-contentMat">
+            <a href="#" onclick="visAlle()">Alle</a>
+            <a href="#" onclick="alleBillig()">Minst Pris</a>
+            <a href="#" onclick="alleAlfa()">Alfabetisk</a>
+            <a href="#" onclick="alleStorrelse()">Lettest</a>
+          </div>
+        </div>
+        <div class="dropdownmat2">
+          <button onclick="dropDownMat2()" class="dropbtnMat2">Brød</button>
+          <div id="myDropdownMat2" class="dropdown-contentMat2">
+            <a href="#" onclick="billigBrød()">Minst Pris</a>
+            <a href="#" onclick="alfaBrød()">Alfabetisk</a>
+            <a href="#" onclick="storrelseBrød()">Lettest</a>
+          </div>
+        </div>
+        <div class="dropdownmat3">
+          <button onclick="dropDownMat3()" class="dropbtnMat3">Melk</button>
+          <div id="myDropdownMat3" class="dropdown-contentMat3">
+            <a href="#" onclick="billigMelk()">Minst Pris</a>
+            <a href="#" onclick="alfaMelk()">Alfabetisk</a>
+            <a href="#" onclick="storrelseMelk()">Lettest</a>
+          </div>
+        </div>
+      <div class="dropdownmat4">
+        <button onclick="dropDownMat4()" class="dropbtnMat4">Brus</button>
+        <div id="myDropdownMat4" class="dropdown-contentMat4">
+          <a href="#" onclick="billigBrus()">Minst Pris</a>
+          <a href="#" onclick="alfaBrus()">Alfabetisk</a>
+          <a href="#" onclick="storrelseBrus()">Lettest</a>
+        </div>
       </div>
+      <div class="dropdownmat5">
+        <button onclick="dropDownMat5()" class="dropbtnMat5">Pålegg</button>
+        <div id="myDropdownMat5" class="dropdown-contentMat5">
+          <div class="dropdownmat6">
+            <button onclick="dropDownMat6()" class="dropbtnMat6">Kylling og Kjøttpålegg</button>
+            <div id="myDropdownMat6" class="dropdown-contentMat6">
+              <a href="#" onclick="billigKkpålegg()">Minst Pris</a>
+              <a href="#" onclick="alfaKkpålegg()">Alfabetisk</a>
+              <a href="#" onclick="storrelseKkpålegg()">Lettest</a>
+            </div>
+          </div>
+          <div class="dropdownmat7">
+            <button onclick="dropDownMat7()" class="dropbtnMat7">Fiskepålegg</button>
+            <div id="myDropdownMat7" class="dropdown-contentMat7">
+              <a href="#" onclick="billigFiskepålegg()">Minst Pris</a>
+              <a href="#" onclick="alfaFiskepålegg()">Alfabetisk</a>
+              <a href="#" onclick="storrelseFiskepålegg()">Lettest</a>
+            </div>
+          </div>
+          <div class="dropdownmat8">
+            <button onclick="dropDownMat8()" class="dropbtnMat8">Søtpålegg</button>
+            <div id="myDropdownMat8" class="dropdown-contentMat8">
+              <a href="#" onclick="billigSøtpålegg()">Minst Pris</a>
+              <a href="#" onclick="alfaSøtpålegg()">Alfabetisk</a>
+              <a href="#" onclick="storrelseSøtpålegg()">Lettest</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="AlleVarer grid-4">
 
       </div>
@@ -154,34 +215,127 @@
         fpålegg.on("child_added",genererHTML);
         søtpålegg.on("child_added",genererHTML);
       }
-
+      function alleBillig() {
+          alleVarer.innerHTML=``
+          brød.orderByChild("Pris").on("child_added",genererHTML);
+          brus.orderByChild("Pris").on("child_added",genererHTML);
+          kkpålegg.orderByChild("Pris").on("child_added",genererHTML);
+          fpålegg.orderByChild("Pris").on("child_added",genererHTML);
+          søtpålegg.orderByChild("Pris").on("child_added",genererHTML);
+      }
+      function alleAlfa() {
+        alleVarer.innerHTML=``
+        brød.orderByChild("Vare").on("child_added",genererHTML)
+        melk.orderByChild("Vare").on("child_added",genererHTML)
+        brus.orderByChild("Vare").on("child_added",genererHTML)
+        kkpålegg.orderByChild("Vare").on("child_added",genererHTML)
+        fiskepålegg.orderByChild("Vare").on("child_added",genererHTML)
+        søtpålegg.orderByChild("Vare").on("child_added",genererHTML)
+      }
+      function alleStorrelse() {
+        alleVarer.innerHTML=``
+        brød.orderByChild("Storrelse").on("child_added",genererHTML)
+        melk.orderByChild("Storrelse").on("child_added",genererHTML)
+        brus.orderByChild("Storrelse").on("child_added",genererHTML)
+        kkpålegg.orderByChild("Storrelse").on("child_added",genererHTML)
+        fiskepålegg.orderByChild("Storrelse").on("child_added",genererHTML)
+        søtpålegg.orderByChild("Storrelse").on("child_added",genererHTML)
+      }
       function visBrød(){
         alleVarer.innerHTML = ``
         brød.on("child_added",genererHTML);
+      }
+      function billigBrød() {
+        alleVarer.innerHTML=``
+        brød.orderByChild("Pris").on("child_added",genererHTML)
+      }
+      function alfaBrød() {
+        alleVarer.innerHTML=``
+        brød.orderByChild("Vare").on("child_added",genererHTML)
+      }
+      function storrelseBrød() {
+        alleVarer.innerHTML=``
+        brød.orderByChild("Storrelse").on("child_added",genererHTML)
       }
       function visMelk(){
         alleVarer.innerHTML = ``
         melk.on("child_added",genererHTML);
       }
+      function billigMelk() {
+        alleVarer.innerHTML=``
+        melk.orderByChild("Pris").on("child_added",genererHTML)
+      }
+      function alfaMelk() {
+        alleVarer.innerHTML=``
+        melk.orderByChild("Vare").on("child_added",genererHTML)
+      }
+      function storrelseMelk() {
+        alleVarer.innerHTML=``
+        melk.orderByChild("Storrelse").on("child_added",genererHTML)
+      }
       function visBrus(){
         alleVarer.innerHTML = ``
         brus.on("child_added",genererHTML);
+      }
+      function billigBrus() {
+        alleVarer.innerHTML=``
+        brus.orderByChild("Pris").on("child_added",genererHTML)
+      }
+      function alfaBrus() {
+        alleVarer.innerHTML=``
+        brus.orderByChild("Vare").on("child_added",genererHTML)
+      }
+      function storrelseBrus() {
+        alleVarer.innerHTML=``
+        brus.orderByChild("Storrelse").on("child_added",genererHTML)
       }
       function viskkpålegg(){
         alleVarer.innerHTML = ``
         kkpålegg.on("child_added",genererHTML);
       }
+      function billigKkpålegg() {
+        alleVarer.innerHTML=``
+        kkpålegg.orderByChild("Pris").on("child_added",genererHTML)
+      }
+      function alfaKkpålegg() {
+        alleVarer.innerHTML=``
+        kkpålegg.orderByChild("Vare").on("child_added",genererHTML)
+      }
+      function storrelseKkpålegg() {
+        alleVarer.innerHTML=``
+        kkpålegg.orderByChild("Storrelse").on("child_added",genererHTML)
+      }
       function visfpålegg(){
         alleVarer.innerHTML = ``
         fpålegg.on("child_added",genererHTML);
+      }
+      function billigFiskepålegg() {
+        alleVarer.innerHTML=``
+        fpålegg.orderByChild("Pris").on("child_added",genererHTML)
+      }
+      function alfaFiskepålegg() {
+        alleVarer.innerHTML=``
+        fpålegg.orderByChild("Vare").on("child_added",genererHTML)
+      }
+      function storrelseFiskepålegg() {
+        alleVarer.innerHTML=``
+        fpålegg.orderByChild("Storrelse").on("child_added",genererHTML)
       }
       function visSøtpålegg() {
         alleVarer.innerHTML = ``
         søtpålegg.on("child_added",genererHTML);
       }
-      function visBillig() {
-          alleVarer.innerHTML=``
-          brød.orderByChild("Pris").on("child_added",genererHTML);
+      function billigSøtpålegg() {
+        alleVarer.innerHTML=``
+        søtpålegg.orderByChild("Pris").on("child_added",genererHTML)
+      }
+      function alfaSøtpålegg() {
+        alleVarer.innerHTML=``
+        søtpålegg.orderByChild("Vare").on("child_added",genererHTML)
+      }
+      function storrelseSøtpålegg() {
+        alleVarer.innerHTML=``
+        søtpålegg.orderByChild("Storrelse").on("child_added",genererHTML)
       }
     </script>
 
@@ -214,6 +368,146 @@
       });
     }
 
+    </script>
+    <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function dropDownMat() {
+      document.getElementById("myDropdownMat").classList.toggle("showMat");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtnMat')) {
+        var dropdowns = document.getElementsByClassName("dropdown-contentMat");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('showMat')) {
+            openDropdown.classList.remove('showMat');
+          }
+        }
+      }
+    }
+    function dropDownMat2() {
+      document.getElementById("myDropdownMat2").classList.toggle("showMat");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtnMat2')) {
+        var dropdowns = document.getElementsByClassName("dropdown-contentMat2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('showMat')) {
+            openDropdown.classList.remove('showMat');
+          }
+        }
+      }
+    }
+    function dropDownMat3() {
+      document.getElementById("myDropdownMat3").classList.toggle("showMat");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtnMat3')) {
+        var dropdowns = document.getElementsByClassName("dropdown-contentMat3");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('showMat')) {
+            openDropdown.classList.remove('showMat');
+          }
+        }
+      }
+    }
+    function dropDownMat4() {
+      document.getElementById("myDropdownMat4").classList.toggle("showMat");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtnMat4')) {
+        var dropdowns = document.getElementsByClassName("dropdown-contentMat4");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('showMat')) {
+            openDropdown.classList.remove('showMat');
+          }
+        }
+      }
+    }
+    function dropDownMat5() {
+      document.getElementById("myDropdownMat5").classList.toggle("showMat");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtnMat5')) {
+        var dropdowns = document.getElementsByClassName("dropdown-contentMat5");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('showMat')) {
+            openDropdown.classList.remove('showMat');
+          }
+        }
+      }
+    }
+    function dropDownMat6() {
+      document.getElementById("myDropdownMat6").classList.toggle("showMat");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtnMat6')) {
+        var dropdowns = document.getElementsByClassName("dropdown-contentMat6");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('showMat')) {
+            openDropdown.classList.remove('showMat');
+          }
+        }
+      }
+    }
+    function dropDownMat7() {
+      document.getElementById("myDropdownMat7").classList.toggle("showMat");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtnMat7')) {
+        var dropdowns = document.getElementsByClassName("dropdown-contentMat7");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('showMat')) {
+            openDropdown.classList.remove('showMat');
+          }
+        }
+      }
+    }
+    function dropDownMat8() {
+      document.getElementById("myDropdownMat8").classList.toggle("showMat");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtnMat8')) {
+        var dropdowns = document.getElementsByClassName("dropdown-contentMat8");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('showMat')) {
+            openDropdown.classList.remove('showMat');
+          }
+        }
+      }
+    }
     </script>
   </body>
 </html>

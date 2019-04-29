@@ -466,3 +466,52 @@ img {vertical-align: middle;}
   max-width: 300px;
   text-align: center;
 }
+/* Dropdown Button */
+.dropbtnMat,.dropbtnMat2, .dropbtnMat3, .dropbtnMat4, .dropbtnMat5, .dropbtnMat6, .dropbtnMat7, .dropbtnMat8 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtnMat:hover, .dropbtnMat:focus,.dropbtnMat2:hover, .dropbtnMat2:focus,.dropbtnMat3:hover, .dropbtnMat3:focus,.dropbtnMat4:hover, .dropbtnMat4:focus,.dropbtnMat5:hover, .dropbtnMat5:focus,.dropbtnMat6:hover, .dropbtnMat6:focus,.dropbtnMat7:hover, .dropbtnMat7:focus,.dropbtnMat8:hover, .dropbtnMat8:focus {
+  background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdownMat,.dropdownMat2,.dropdownMat3,.dropdownMat4,.dropdownMat5,.dropdownMat6,.dropdownMat7,.dropdownMat8  {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-contentMat,.dropdown-contentMat2,.dropdown-contentMat3,.dropdown-contentMat4,.dropdown-contentMat5,.dropdown-contentMat6,.dropdown-contentMat7,.dropdown-contentMat8 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+  max-width: 200px;
+  margin-left: 100px;
+}
+
+/* Links inside the dropdown */
+.dropdown-contentMat a,.dropdown-contentMat2 a,.dropdown-contentMat3 a,.dropdown-contentMat4 a,.dropdown-contentMat5 a,.dropdown-contentMat6 a,.dropdown-contentMat7 a,.dropdown-contentMat8 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-contentMat a:hover,.dropdown-contentMat2 a:hover, .dropdown-contentMat3 a:hover, .dropdown-contentMat4 a:hover, .dropdown-contentMat5 a:hover, .dropdown-contentMat6 a:hover, .dropdown-contentMat7 a:hover, .dropdown-contentMat8 a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.showMat {display:block;}
