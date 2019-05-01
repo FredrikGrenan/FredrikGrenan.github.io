@@ -618,7 +618,7 @@
         "Bemerkning":"Middels",
         "Tekst":"Scones lages med bakepulver som hevemiddel, og er derfor raskt å lage. Grove scones passer til frokost, lunsj, som kuvertbrød eller som tilbehør til koldtbordet. ",
         "Ingredienser":"kanskje noe her",
-        "Innstruks":"1. gjør noe 2. gjør noe 3. gjør noe",
+        "Innstruks":"blablabla",
         "Bilde":"Bilder/GHS.jpg ",
         "Bilde2":"Bilder/GHSStor.jpg"
       },
@@ -628,7 +628,9 @@
         "Bemerkning":"Enkel",
         "Tekst":"En herlig start på dagen; kjølskapsgrøt med kokos og blåbær. Det beste er at grøten nærmest lager seg selv, over natten.",
         "Ingredienser":"kanskje noe her",
-        "Innstruks":"blablabla",
+        "Innstruks1":"1. Ha havregryn og melk i et glass eller en annen beholder med lokk. Tilsett kokosflak og havparten av blåbær.",
+        "Innstruks2":"2. Ha på lokk, og sett glasset i kjøleskapet til neste morgen.",
+        "Innstruks3":"3. Rør rundt i grøten før servering, tilsett vaniljekesam eller yoghurt. Server med ekstra blåbær.",
         "Bilde":"Bilder/KGmK.jpg",
         "Bilde2":"Bilder/KGmKStor.jpg"
       },
@@ -638,7 +640,9 @@
         "Bemerkning":"Middels",
         "Tekst":"Disse små søte minicroissantene smaker himmelsk sammen med appelsinmarmelade. En søt avslutning på et måltid, som kaffegodt eller som eksklusiv frokost når det er det som kreves. ",
         "Ingredienser":"kanskje noe her",
-        "Innstruks":"blablabla",
+        "Innstruks1":"blablabla",
+        "Innstruks2":"blablabla",
+        "Innstruks3":"blablabla",
         "Bilde":"Bilder/MCmAM.jpg",
         "Bilde2":"Bilder/MCmAMStor.jpg"
       },

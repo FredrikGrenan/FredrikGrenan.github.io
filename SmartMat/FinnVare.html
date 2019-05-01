@@ -2,7 +2,7 @@
 <html lang="nb" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Finn Varer</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="Stilark.css">
@@ -71,8 +71,8 @@
           <button class="MatKnapp" onclick="visSøtpålegg()">Søtpålegg</button>
         </div> -->
         <div class="dropdownmat">
-          <button onclick="kategoriknapp()" class="dropbtnMat">Alle</button>
-          <div id="mydropdownmat" class="dropdown-contentMat">
+          <button onclick="kategoriknapp()" class="dropbtnMat dropdownKnapp">Alle</button>
+          <div id="mydropdownmat" class="dropdown-contentMat  dropdownInnhold">
             <a href="#" onclick="visAlle()">Alle</a>
             <a href="#" onclick="alleBillig()">Minst Pris</a>
             <a href="#" onclick="alleAlfa()">Alfabetisk</a>
@@ -80,8 +80,8 @@
           </div>
         </div>
         <div class="dropdownmat2">
-          <button onclick="kategoriknapp2()" class="dropbtnMat2">Brød</button>
-          <div id="mydropdownmat2" class="dropdown-contentMat2">
+          <button onclick="kategoriknapp2()" class="dropbtnMat  dropdownKnapp">Brød</button>
+          <div id="mydropdownmat2" class="dropdown-contentMat  dropdownInnhold">
             <a href="#" onclick="visBrød()">Alle</a>
             <a href="#" onclick="billigBrød()">Minst Pris</a>
             <a href="#" onclick="alfaBrød()">Alfabetisk</a>
@@ -89,8 +89,8 @@
           </div>
         </div>
         <div class="dropdownmat3">
-          <button onclick="kategoriknapp3()" class="dropbtnMat3">Melk</button>
-          <div id="mydropdownmat3" class="dropdown-contentMat3">
+          <button onclick="kategoriknapp3()" class="dropbtnMat  dropdownKnapp">Melk</button>
+          <div id="mydropdownmat3" class="dropdown-contentMat  dropdownInnhold">
             <a href="#" onclick="visMelk()">Alle</a>
             <a href="#" onclick="billigMelk()">Minst Pris</a>
             <a href="#" onclick="alfaMelk()">Alfabetisk</a>
@@ -98,8 +98,8 @@
           </div>
         </div>
       <div class="dropdownmat4">
-        <button onclick="kategoriknapp4()" class="dropbtnMat4">Brus</button>
-        <div id="mydropdownmat4" class="dropdown-contentMat4">
+        <button onclick="kategoriknapp4()" class="dropbtnMat4  dropdownKnapp">Brus</button>
+        <div id="mydropdownmat4" class="dropdown-contentMat4  dropdownInnhold">
           <a href="#" onclick="visBrus()">Alle</a>
           <a href="#" onclick="billigBrus()">Minst Pris</a>
           <a href="#" onclick="alfaBrus()">Alfabetisk</a>
@@ -107,11 +107,11 @@
         </div>
       </div>
       <div class="dropdownmat5">
-        <button onclick="kategoriknapp5()" class="dropbtnMat5">Pålegg</button>
+        <button onclick="kategoriknapp5()" class="dropbtnMat5  dropdownKnapp">Pålegg</button>
         <div id="mydropdownmat5" class="dropdown-contentMat5">
           <div class="dropdownmat6">
             <button onclick="kategoriknapp6()" class="dropbtnMat6">Kylling og Kjøttpålegg</button>
-            <div id="mydropdownmat6" class="dropdown-contentMat6">
+            <div id="mydropdownmat6" class="dropdown-contentMat6  dropdownInnhold">
               <a href="#" onclick="viskkpålegg">Alle</a>
               <a href="#" onclick="billigKkpålegg()">Minst Pris</a>
               <a href="#" onclick="alfaKkpålegg()">Alfabetisk</a>
@@ -119,8 +119,8 @@
             </div>
           </div>
           <div class="dropdownmat7">
-            <button onclick="kategoriknapp7()" class="dropbtnMat7">Fiskepålegg</button>
-            <div id="mydropdownmat7" class="dropdown-contentMat7">
+            <button onclick="kategoriknapp7()" class="dropbtnMat7  dropdownKnapp">Fiskepålegg</button>
+            <div id="mydropdownmat7" class="dropdown-contentMat7  dropdownInnhold">
               <a href="#" onclick="visfpålegg">Alle</a>
               <a href="#" onclick="billigFiskepålegg()">Minst Pris</a>
               <a href="#" onclick="alfaFiskepålegg()">Alfabetisk</a>
@@ -128,8 +128,8 @@
             </div>
           </div>
           <div class="dropdownmat8">
-            <button onclick="kategoriknapp8()" class="dropbtnMat8">Søtpålegg</button>
-            <div id="mydropdownmat8" class="dropdown-contentMat8">
+            <button onclick="kategoriknapp8()" class="dropbtnMat8  dropdownKnapp">Søtpålegg</button>
+            <div id="mydropdownmat8" class="dropdown-contentMat8 dropdownInnhold">
               <a href="#" onclick="visSøtpålegg">Alle</a>
               <a href="#" onclick="billigSøtpålegg()">Minst Pris</a>
               <a href="#" onclick="alfaSøtpålegg()">Alfabetisk</a>
@@ -142,11 +142,15 @@
       <div class="AlleVarer grid-4">
 
       </div>
-      <div class="">
-        <button type="button" onclick="visBillig()">Billig</button>
-      </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="">
+        <img class="QR" src="Bilder/SmartMat (1).png" alt="QR kode for mobilbruk">
+      </div>
+      <div class="footertekst">
+        <p>Dette er en nettside laget til et skoleprosjekt. Jeg har ingen eierskap til noen av bildene på nettsiden og nettbutikken er kun et konsept, altså er det ikke en fungerende tjeneste. Nettsiden er laget av Fredrik Grenan, elev på Sandvika VGS</p>
+      </div>
+    </footer>
 
     <script type="text/javascript">
       const alleVarer = document.querySelector(".AlleVarer");
@@ -380,10 +384,12 @@
   toggle between hiding and showing the dropdown content */
   function kategoriknapp() {
     document.getElementById("mydropdownmat").classList.toggle("showMat");
+    console.log("åpne");
   }
 
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
+    console.log(event.target);
     if (!event.target.matches('.dropbtnMat')) {
       var dropdowns = document.getElementsByClassName("dropdown-contentMat");
       var i;
@@ -538,6 +544,7 @@ function kategoriknapp() {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
+  console.log(event.target)
   if (!event.target.matches('.dropbtnmat')) {
     var dropdowns = document.getElementsByClassName("dropdown-contentmat");
     var i;
@@ -549,6 +556,13 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+  }
+}
+</script>
+<script type="text/javascript">
+
 </script>
   </body>
 </html>
