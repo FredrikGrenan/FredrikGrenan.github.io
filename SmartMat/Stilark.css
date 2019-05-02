@@ -125,9 +125,9 @@
     display: grid;
     margin-left:auto;
     margin-right:auto;
-    width: 60%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     font-size: 22px;
+    margin: 20px;
   }
   .footer p{
     text-align: center;
@@ -540,9 +540,7 @@
   #IndexMatforslag{
     grid-template-columns: 1fr;
     margin: 25px;
-
   }
-
   #Logo{
     padding: 0px;
     width: 100%;
@@ -550,8 +548,6 @@
   }
   .content{
     bottom: 20px;
-    left: 20px;
     text-align: center;
-    width: 40%;
   }
 }
