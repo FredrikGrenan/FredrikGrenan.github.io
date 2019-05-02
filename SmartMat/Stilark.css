@@ -129,6 +129,9 @@
     font-size: 22px;
     margin: 20px;
   }
+  .QRDiv{
+    align-content: center;
+  }
   .footer p{
     text-align: center;
     padding: 5px;
@@ -494,7 +497,9 @@
 
   .QR{
   max-width: 150px;
-  margin-left: 50%
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
   }
   /* Dropdown button on hover & focus */
   .dropbtnMat:hover, .dropbtnMat:focus,.dropbtnMat2:hover, .dropbtnMat2:focus,.dropbtnMat3:hover, .dropbtnMat3:focus,.dropbtnMat4:hover, .dropbtnMat4:focus,.dropbtnMat5:hover, .dropbtnMat5:focus,.dropbtnMat6:hover, .dropbtnMat6:focus,.dropbtnMat7:hover, .dropbtnMat7:focus,.dropbtnMat8:hover, .dropbtnMat8:focus {
