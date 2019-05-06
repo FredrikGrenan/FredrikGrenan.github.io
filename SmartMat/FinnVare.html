@@ -112,7 +112,7 @@
           <div class="dropdownmat6">
             <button onclick="kategoriknapp6()" class="dropbtnMat6">Kylling og Kjøttpålegg</button>
             <div id="mydropdownmat6" class="dropdown-contentMat6  dropdownInnhold">
-              <a href="#" onclick="viskkpålegg">Alle</a>
+              <a href="#" onclick="viskkpålegg()">Alle</a>
               <a href="#" onclick="billigKkpålegg()">Minst Pris</a>
               <a href="#" onclick="alfaKkpålegg()">Alfabetisk</a>
               <a href="#" onclick="storrelseKkpålegg()">Lettest</a>
@@ -121,7 +121,7 @@
           <div class="dropdownmat7">
             <button onclick="kategoriknapp7()" class="dropbtnMat7  dropdownKnapp">Fiskepålegg</button>
             <div id="mydropdownmat7" class="dropdown-contentMat7  dropdownInnhold">
-              <a href="#" onclick="visfpålegg">Alle</a>
+              <a href="#" onclick="visfpålegg()">Alle</a>
               <a href="#" onclick="billigFiskepålegg()">Minst Pris</a>
               <a href="#" onclick="alfaFiskepålegg()">Alfabetisk</a>
               <a href="#" onclick="storrelseFiskepålegg()">Lettest</a>
@@ -130,7 +130,7 @@
           <div class="dropdownmat8">
             <button onclick="kategoriknapp8()" class="dropbtnMat8  dropdownKnapp">Søtpålegg</button>
             <div id="mydropdownmat8" class="dropdown-contentMat8 dropdownInnhold">
-              <a href="#" onclick="visSøtpålegg">Alle</a>
+              <a href="#" onclick="visSøtpålegg()">Alle</a>
               <a href="#" onclick="billigSøtpålegg()">Minst Pris</a>
               <a href="#" onclick="alfaSøtpålegg()">Alfabetisk</a>
               <a href="#" onclick="storrelseSøtpålegg()">Lettest</a>
@@ -333,7 +333,7 @@
         alleVarer.innerHTML=``
         fpålegg.orderByChild("Storrelse").on("child_added",genererHTML)
       }
-      function visSøtpålegg() {
+      function visSøtpålegg(){
         alleVarer.innerHTML = ``
         søtpålegg.on("child_added",genererHTML);
       }
@@ -520,7 +520,7 @@
 </script>
 <script>
   function kategoriknapp8() {
-    document.getElementById("mydropdownmat8").classList.toggle("show");
+    document.getElementById("mydropdownmat8").classList.toggle("showMat");
   }
 
   // Close the dropdown if the user clicks outside of it
