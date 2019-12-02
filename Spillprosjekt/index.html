@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tittel">Skriv inn ditt navn</title>
+
+    <script src="p5/p5.js"></script>
+    <script src="p5/addons/p5.dom.js"></script>
+    <script src="p5/addons/p5.sound.js"></script>
+  </head>
+  <body>
+    <div class="margintop">
+
+    </div>
+    <div class="gridStor">
+      <div class="">
+        <h1>Fabrikken</h1>
+        <div class="fabGrid">
+          <div class="fabBoks">
+            <button id="autoclick" type="button" class="fabKnapp" name="button">Auto Click: 10$</button>
+            <p>produserer 0.1 i sekundet</p>
+          </div>
+          <div class="fabBoks">
+            <button id="storreOvner"type="button" class="fabKnapp" name="button">Større ovner: 100$</button>
+            <p>Produserer 1 i sekundet</p>
+          </div>
+          <div class="fabBoks">
+            <button id="varmeOvner"type="button" class="fabKnapp" name="button">Varmere ovner: 1000$</button>
+            <p>Produserer 10 i sekundet</p>
+          </div>
+          <div class="fabBoks">
+            <button id="storeFabrikker" type="button" class="fabKnapp" name="button">Større Fabrikker: 10000$</button>
+            <p>produserer 100 i sekundet</p>
+          </div>
+        </div>
+          <div class="modaldiv">
+            <button class="hjelpknapp" id="myBtn">Instruksjoner til spillet</button>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Velkommen til Cookie Clicker</p>
+              <p> dette er et spill der du skal prøve å tjene mest mulig penger. Det gjør du ved å trykke på kjeksen. Når du får nok penger kan du kjøpe to forskjellige oppgraderinger, du kan oppgradere fabrikken for å tjene penger uten å gjøre noe. eller så kan du oppgradere ditt eget trykk til å gi mer penger per klikk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <h2>Cookie Clicker</h2>
+        <p id="bakeriNavn">Ditt nye bakeri!</p>
+        <img id="cookie" src="bilder/cookie.png" alt="">
+        <p id="antallKjeks">0$</p>
+        <p id="kjeksPerSekund">0$ per sekund</p>
+      </div>
+      <div class="">
+        <h3>Oppgraderinger!</h3>
+        <div class="oppGrid">
+          <div class="oppBoks">
+            <button id="multiklikk" type="button" class="oppKnapp" name="button">2 Kjeks per trykk: 30$</button>
+          </div>
+          <div id="statistikk">
+            <p>Statistikk:</p>
+            <p id="stats">Du har klikket totalt 0 ganger</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="effects.js"></script>
+    <script src="cookie.js"></script>
+    <script src="fabrikken.js"></script>
+  </body>
+</html>
